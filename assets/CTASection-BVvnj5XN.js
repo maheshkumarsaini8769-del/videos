@@ -1,4 +1,4 @@
-import{j as e}from"./motion-qb6tqpTO.js";import{R as n,S as l}from"./SectionHeading-8C0vIkKr.js";import{c as t,P as a,S as s,W as r}from"./index-Df7CnFGB.js";/**
+import{j as e}from"./motion-qb6tqpTO.js";import{R as n,S as l}from"./SectionHeading-C7hskimX.js";import{c as t,P as a,S as s,W as r}from"./index-Dsr2Lerd.js";/**
  * @license lucide-react v0.454.0 - ISC
  *
  * This source code is licensed under the ISC license.
