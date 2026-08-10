@@ -10,7 +10,7 @@ function Logo() {
       <img
         src={`${import.meta.env.BASE_URL}sdc.png`}
         alt="SDC logo"
-        className="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+        className="h-10 w-auto object-contain mix-blend-screen transition-transform duration-300 group-hover:scale-105"
       />
       <span className="flex flex-col leading-none">
         <span className="font-display text-base font-bold tracking-wide text-white">

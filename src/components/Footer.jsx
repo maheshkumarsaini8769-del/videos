@@ -12,7 +12,7 @@ export default function Footer() {
               <img
                 src={`${import.meta.env.BASE_URL}sdc.png`}
                 alt="SDC logo"
-                className="h-10 w-auto object-contain"
+                className="h-10 w-auto object-contain mix-blend-screen"
               />
               <span className="font-display text-base font-bold tracking-wide text-white">
                 SQUAD <span className="text-slate-300">DIGITAL</span>
