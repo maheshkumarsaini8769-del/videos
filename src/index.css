@@ -35,7 +35,7 @@
   }
 
   .text-gradient-gold {
-    @apply bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-yellow-300 via-yellow-400 to-amber-500 bg-clip-text text-transparent;
   }
 
   .text-gradient-blue {
@@ -54,7 +54,7 @@
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 font-semibold text-navy-950 transition-all duration-300 hover:bg-slate-200;
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-red-600 to-red-500 px-6 py-3 font-semibold text-white shadow-[0_8px_24px_rgba(227,6,19,0.35)] transition-all duration-300 hover:from-red-500 hover:to-red-400;
   }
 
   .btn-primary:hover {
@@ -74,7 +74,11 @@
   }
 
   .btn-flame {
-    @apply inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 px-6 py-3 font-semibold text-white transition-all duration-300 hover:border-white/50 hover:bg-white/10;
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-yellow-400 to-amber-500 px-6 py-3 font-semibold text-navy-950 shadow-[0_8px_24px_rgba(255,199,0,0.25)] transition-all duration-300 hover:from-yellow-300 hover:to-yellow-500;
+  }
+
+  .btn-flame:hover {
+    @apply -translate-y-0.5;
   }
 
   .btn-flame:active {

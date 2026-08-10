@@ -43,7 +43,7 @@ export default function Hero() {
                 SQUAD
               </Word>
               <br />
-              <Word delay={0.42} className="text-[clamp(1.7rem,5.5vw,3.4rem)] text-slate-300">
+              <Word delay={0.42} className="text-[clamp(1.7rem,5.5vw,3.4rem)] text-gradient-gold">
                 DIGITAL CLASSES
               </Word>
             </h1>

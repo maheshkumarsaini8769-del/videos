@@ -1,11 +1,11 @@
 ﻿const NEUTRAL = {
-  text: 'text-slate-200',
-  bg: 'bg-white',
-  solid: '#E9E9EE',
-  border: 'border-white/20',
-  glow: 'shadow-[0_0_18px_rgba(255,255,255,0.05)]',
-  gradient: 'from-white/[0.06] via-transparent to-transparent',
-  ring: 'ring-white/15',
+  text: 'text-white',
+  bg: 'bg-yellow-400',
+  solid: '#FFC700',
+  border: 'border-yellow-400/20',
+  glow: 'shadow-[0_0_18px_rgba(255,199,0,0.12)]',
+  gradient: 'from-yellow-400/[0.08] via-transparent to-transparent',
+  ring: 'ring-yellow-400/25',
 }
 
 export const COURSE_COLORS = {
