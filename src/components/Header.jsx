@@ -23,6 +23,7 @@ function Logo() {
 export default function Header() {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
+  const [heroEnrollVisible, setHeroEnrollVisible] = useState(false)
   const reduce = useReducedMotion()
   const location = useLocation()
 
@@ -35,6 +36,26 @@ export default function Header() {
 
   useEffect(() => {
     setOpen(false)
+  }, [location.pathname])
+
+  useEffect(() => {
+    if (typeof IntersectionObserver === 'undefined') return undefined
+    const mobile = window.matchMedia('(max-width: 767px)')
+    if (!mobile.matches) {
+      setHeroEnrollVisible(false)
+      return undefined
+    }
+    const el = document.querySelector('[data-hero-enroll]')
+    if (!el) {
+      setHeroEnrollVisible(false)
+      return undefined
+    }
+    const observer = new IntersectionObserver(
+      ([entry]) => setHeroEnrollVisible(entry.isIntersecting),
+      { rootMargin: '0px' }
+    )
+    observer.observe(el)
+    return () => observer.disconnect()
   }, [location.pathname])
 
   useEffect(() => {
@@ -94,7 +115,7 @@ export default function Header() {
             </a>
             <Link
               to={enrollTarget}
-              className="btn-primary !px-5 !py-2 text-sm"
+              className={`btn-primary !px-5 !py-2 text-sm ${heroEnrollVisible ? 'hidden md:inline-flex' : ''}`}
             >
               <Zap size={15} fill="currentColor" />
               Enroll Now

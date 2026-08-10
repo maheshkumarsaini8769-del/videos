@@ -67,7 +67,7 @@ export default function Hero() {
               transition={{ delay: 0.8, duration: 0.6 }}
               className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center lg:justify-start"
             >
-              <Link to="/contact#enquiry" className="btn-primary w-full sm:w-auto">
+              <Link to="/contact#enquiry" className="btn-primary w-full sm:w-auto" data-hero-enroll>
                 <Zap size={17} fill="currentColor" />
                 Enroll Now
               </Link>
