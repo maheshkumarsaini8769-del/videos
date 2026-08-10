@@ -9,9 +9,11 @@ export default function Footer() {
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2.5">
-              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-white font-display text-sm font-bold text-navy-950">
-                SDC
-              </span>
+              <img
+                src={`${import.meta.env.BASE_URL}sdc.png`}
+                alt="SDC logo"
+                className="h-10 w-auto object-contain"
+              />
               <span className="font-display text-base font-bold tracking-wide text-white">
                 SQUAD <span className="text-slate-300">DIGITAL</span>
               </span>

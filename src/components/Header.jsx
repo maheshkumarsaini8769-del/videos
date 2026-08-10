@@ -7,9 +7,11 @@ import { NAV_LINKS, SITE } from '../data/courses'
 function Logo() {
   return (
     <Link to="/" className="group flex items-center gap-2.5" aria-label="SDC — Squad Digital Classes, home">
-      <span className="relative flex h-10 w-10 items-center justify-center rounded-xl bg-white font-display text-sm font-bold text-navy-950">
-        SDC
-      </span>
+      <img
+        src={`${import.meta.env.BASE_URL}sdc.png`}
+        alt="SDC logo"
+        className="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+      />
       <span className="flex flex-col leading-none">
         <span className="font-display text-base font-bold tracking-wide text-white">
           SQUAD <span className="text-slate-300">DIGITAL</span>
