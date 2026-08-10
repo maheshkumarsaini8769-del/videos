@@ -135,7 +135,8 @@
   .animate-marquee,
   .animate-shine-sweep,
   .animate-pulse-ring,
-  .animate-gradient-move {
+  .animate-gradient-move,
+  .animate-ring-shake {
     animation: none !important;
   }
 

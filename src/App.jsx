@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion, MotionConfig } from 'framer-motion'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import MobileStickyBar from './components/MobileStickyBar'
 import FloatingWhatsApp from './components/FloatingWhatsApp'
 import ScrollProgress from './components/ScrollProgress'
 import StarField from './components/StarField'
@@ -24,7 +23,6 @@ function PageShell({ children }) {
       <Header />
       <main className="relative z-10">{children}</main>
       <Footer />
-      <MobileStickyBar />
       <FloatingWhatsApp />
     </div>
   )
