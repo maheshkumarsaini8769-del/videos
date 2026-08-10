@@ -1,0 +1,151 @@
+
+> squad-digital-classes@1.0.0 dev
+> vite
+
+
+  [32m[1mVITE[22m v5.4.21[39m  [2mready in [0m[1m764[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+[2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+[2m8:19:47 pm[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mtailwind.config.js[22m
+[2m8:19:58 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css[22m
+[2m8:20:13 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css, /src/components/MobileStickyBar.jsx, /src/components/Footer.jsx, /src/components/Header.jsx, /src/components/WhatsAppButton.jsx, /src/components/CompanyStrip.jsx, /src/components/Benefits.jsx, /src/components/CourseGrid.jsx, /src/components/Hero.jsx, /src/components/CTASection.jsx, /src/components/ContactSection.jsx, /src/components/EnquiryForm.jsx, /src/components/CourseCard.jsx, /src/pages/Courses.jsx, /src/pages/About.jsx[22m
+[2m8:20:21 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css, /src/components/MobileStickyBar.jsx, /src/components/Footer.jsx, /src/components/Header.jsx, /src/components/WhatsAppButton.jsx, /src/components/CompanyStrip.jsx, /src/components/Benefits.jsx, /src/components/CourseGrid.jsx, /src/components/Hero.jsx, /src/components/CTASection.jsx, /src/components/ContactSection.jsx, /src/components/EnquiryForm.jsx, /src/components/CourseCard.jsx, /src/pages/Courses.jsx, /src/pages/About.jsx[22m
+[2m8:20:32 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero.jsx, /src/index.css[22m
+[2m8:20:45 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/CampaignBanner.jsx, /src/index.css[22m
+[2m8:20:46 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/SecondaryBanner.jsx, /src/index.css[22m
+[2m8:21:05 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/CareerPanel.jsx, /src/index.css[22m
+[2m8:21:33 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/LimitedSeat.jsx, /src/index.css[22m
+[2m8:21:47 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Benefits.jsx, /src/index.css[22m
+[2m8:22:00 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Benefits.jsx, /src/index.css[22m
+[2m8:22:13 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/CompanyStrip.jsx, /src/index.css[22m
+[2m8:22:27 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/SectionHeading.jsx, /src/index.css[22m
+[2m8:22:41 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/StarField.jsx, /src/index.css[22m
+[2m8:22:53 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/ScrollProgress.jsx, /src/index.css[22m
+[2m8:23:08 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/HeroVisual.jsx, /src/index.css[22m
+[2m8:23:16 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/HeroVisual.jsx, /src/index.css[22m
+[2m8:23:22 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/HeroVisual.jsx, /src/index.css[22m
+[2m8:23:31 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/HeroVisual.jsx, /src/index.css[22m
+[2m8:23:35 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/HeroVisual.jsx, /src/index.css[22m
+[2m8:23:44 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/HeroVisual.jsx, /src/index.css[22m
+[2m8:23:57 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Header.jsx, /src/index.css[22m
+[2m8:24:01 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Header.jsx, /src/index.css[22m
+[2m8:24:09 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Header.jsx, /src/index.css[22m
+[2m8:24:21 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Header.jsx, /src/index.css[22m
+[2m8:28:55 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Header.jsx, /src/index.css[22m
+[2m8:29:03 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Header.jsx, /src/index.css[22m
+[2m8:29:20 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Footer.jsx, /src/index.css[22m
+[2m8:29:32 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Footer.jsx, /src/index.css[22m
+[2m8:30:02 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/CTASection.jsx, /src/index.css[22m
+[2m8:30:06 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/CTASection.jsx, /src/index.css[22m
+[2m8:30:10 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/ContactSection.jsx, /src/index.css[22m
+[2m8:30:29 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/ContactSection.jsx, /src/index.css[22m
+[2m8:31:20 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero.jsx, /src/index.css[22m
+[2m8:31:35 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/CampaignBanner.jsx, /src/index.css[22m
+[2m8:31:44 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/CareerPanel.jsx, /src/index.css[22m
+[2m8:31:48 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/CareerPanel.jsx, /src/index.css[22m
+[2m8:31:52 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/LimitedSeat.jsx, /src/index.css[22m
+[2m8:31:56 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/CourseGrid.jsx, /src/index.css[22m
+[2m8:32:04 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Benefits.jsx, /src/index.css[22m
+[2m8:32:12 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Benefits.jsx, /src/index.css[22m
+[2m8:32:18 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/CompanyStrip.jsx, /src/index.css[22m
+[2m8:32:29 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/CompanyStrip.jsx, /src/index.css[22m
+[2m8:32:33 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/ContactSection.jsx, /src/index.css[22m
+[2m8:32:45 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/CTASection.jsx, /src/index.css[22m
+[2m8:32:56 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/EnquiryForm.jsx, /src/index.css[22m
+[2m8:33:00 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/EnquiryForm.jsx, /src/index.css[22m
+[2m8:33:07 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css, /src/App.jsx[22m
+[2m8:33:16 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/WhatsAppButton.jsx, /src/index.css[22m
+[2m8:33:36 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/About.jsx, /src/index.css[22m
+[2m8:33:45 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/About.jsx, /src/index.css[22m
+[2m8:33:54 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/About.jsx, /src/index.css[22m
+[2m8:33:57 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Courses.jsx, /src/index.css[22m
+[2m8:34:22 pm[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m8:34:29 pm[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m8:34:39 pm[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m8:37:09 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css, /src/components/MobileStickyBar.jsx, /src/components/Footer.jsx, /src/components/Header.jsx, /src/components/WhatsAppButton.jsx, /src/components/CompanyStrip.jsx, /src/components/Benefits.jsx, /src/components/CourseGrid.jsx, /src/components/Hero.jsx, /src/components/CTASection.jsx, /src/components/ContactSection.jsx, /src/components/EnquiryForm.jsx, /src/components/CourseCard.jsx, /src/pages/Courses.jsx, /src/pages/About.jsx[22m
+[2m8:37:17 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/CourseCard.jsx, /src/index.css[22m
+[2m8:37:25 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/CourseGrid.jsx, /src/index.css[22m
+[2m8:37:32 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Courses.jsx, /src/index.css[22m
+[2m8:37:44 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/WhatsAppButton.jsx, /src/index.css[22m
+[2m8:37:59 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx, /src/index.css[22m
+[2m8:38:07 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx, /src/index.css[22m
+[2m8:38:22 pm[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m8:38:22 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css, /src/pages/Home.jsx, /src/pages/Courses.jsx, /src/pages/About.jsx, /src/pages/Contact.jsx[22m
+[2m8:38:33 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/About.jsx, /src/index.css[22m
+[2m8:38:39 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Courses.jsx, /src/index.css[22m
+[2m8:38:47 pm[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m8:45:12 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css, /src/components/MobileStickyBar.jsx, /src/components/Footer.jsx, /src/components/Header.jsx, /src/components/WhatsAppButton.jsx, /src/components/CompanyStrip.jsx, /src/components/Benefits.jsx, /src/components/CourseGrid.jsx, /src/components/Hero.jsx, /src/components/CTASection.jsx, /src/components/ContactSection.jsx, /src/components/EnquiryForm.jsx, /src/components/CourseCard.jsx, /src/pages/Courses.jsx, /src/pages/About.jsx[22m
+[2m8:45:12 pm[22m [31m[1m[vite][22m[39m Pre-transform error: EBUSY: resource busy or locked, open 'C:\Users\hi\OneDrive\Desktop\videos\src\data\courses.js'
+[2m8:45:12 pm[22m [31m[1m[vite][22m[39m Pre-transform error: EBUSY: resource busy or locked, open 'C:\Users\hi\OneDrive\Desktop\videos\src\data\courses.js'
+[2m8:45:12 pm[22m [31m[1m[vite][22m[39m Pre-transform error: EBUSY: resource busy or locked, open 'C:\Users\hi\OneDrive\Desktop\videos\src\data\courses.js'
+[2m8:45:12 pm[22m [31m[1m[vite][22m[39m Pre-transform error: EBUSY: resource busy or locked, open 'C:\Users\hi\OneDrive\Desktop\videos\src\data\courses.js'
+[2m8:45:12 pm[22m [31m[1m[vite][22m[39m Pre-transform error: EBUSY: resource busy or locked, open 'C:\Users\hi\OneDrive\Desktop\videos\src\data\courses.js'
+[2m8:45:12 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css, /src/components/MobileStickyBar.jsx, /src/components/Footer.jsx, /src/components/Header.jsx, /src/components/WhatsAppButton.jsx, /src/components/CompanyStrip.jsx, /src/components/Benefits.jsx, /src/components/CourseGrid.jsx, /src/components/Hero.jsx, /src/components/CTASection.jsx, /src/components/ContactSection.jsx, /src/components/EnquiryForm.jsx, /src/components/CourseCard.jsx, /src/pages/Courses.jsx, /src/pages/About.jsx[22m
+[2m8:46:25 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css, /src/components/MobileStickyBar.jsx, /src/components/Footer.jsx, /src/components/Header.jsx, /src/components/WhatsAppButton.jsx, /src/components/CompanyStrip.jsx, /src/components/Benefits.jsx, /src/components/CourseGrid.jsx, /src/components/Hero.jsx, /src/components/CTASection.jsx, /src/components/ContactSection.jsx, /src/components/EnquiryForm.jsx, /src/components/CourseCard.jsx, /src/pages/Courses.jsx, /src/pages/About.jsx[22m
+[2m8:46:25 pm[22m [31m[1m[vite][22m[39m Pre-transform error: EBUSY: resource busy or locked, open 'C:\Users\hi\OneDrive\Desktop\videos\src\data\courses.js'
+[2m8:46:25 pm[22m [31m[1m[vite][22m[39m Pre-transform error: EBUSY: resource busy or locked, open 'C:\Users\hi\OneDrive\Desktop\videos\src\data\courses.js'
+[2m8:46:25 pm[22m [31m[1m[vite][22m[39m Pre-transform error: EBUSY: resource busy or locked, open 'C:\Users\hi\OneDrive\Desktop\videos\src\data\courses.js'
+[2m8:46:25 pm[22m [31m[1m[vite][22m[39m Pre-transform error: EBUSY: resource busy or locked, open 'C:\Users\hi\OneDrive\Desktop\videos\src\data\courses.js'
+[2m8:46:47 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css, /src/components/MobileStickyBar.jsx, /src/components/Footer.jsx, /src/components/Header.jsx, /src/components/WhatsAppButton.jsx, /src/components/CompanyStrip.jsx, /src/components/Benefits.jsx, /src/components/CourseGrid.jsx, /src/components/Hero.jsx, /src/components/CTASection.jsx, /src/components/ContactSection.jsx, /src/components/EnquiryForm.jsx, /src/components/CourseCard.jsx, /src/pages/Courses.jsx, /src/pages/About.jsx[22m
+[2m8:46:47 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: [postcss] EBUSY: resource busy or locked, open 'C:\Users\hi\OneDrive\Desktop\videos\src\data\courses.js'[39m
+  Plugin: [35mvite:css[39m
+  File: [36mC:/Users/hi/OneDrive/Desktop/videos/src/index.css[39m:undefined:NaN
+      at async open (node:internal/fs/promises:641:25)
+      at async Object.readFile (node:internal/fs/promises:1245:14)
+      at async C:\Users\hi\OneDrive\Desktop\videos\node_modules\tailwindcss\lib\lib\expandTailwindAtRules.js:173:34
+      at async Promise.all (index 0)
+      at async C:\Users\hi\OneDrive\Desktop\videos\node_modules\tailwindcss\lib\lib\expandTailwindAtRules.js:172:13
+      at async C:\Users\hi\OneDrive\Desktop\videos\node_modules\tailwindcss\lib\processTailwindFeatures.js:51:9
+      at async plugins (C:\Users\hi\OneDrive\Desktop\videos\node_modules\tailwindcss\lib\plugin.js:38:17)
+      at async LazyResult.runAsync (C:\Users\hi\OneDrive\Desktop\videos\node_modules\postcss\lib\lazy-result.js:299:11)
+      at async compileCSS (file:///C:/Users/hi/OneDrive/Desktop/videos/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:36898:21)
+      at async TransformPluginContext.transform (file:///C:/Users/hi/OneDrive/Desktop/videos/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:36171:11)
+      at async PluginContainer.transform (file:///C:/Users/hi/OneDrive/Desktop/videos/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///C:/Users/hi/OneDrive/Desktop/videos/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///C:/Users/hi/OneDrive/Desktop/videos/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m8:46:47 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css, /src/components/MobileStickyBar.jsx, /src/components/Footer.jsx, /src/components/Header.jsx, /src/components/WhatsAppButton.jsx, /src/components/CompanyStrip.jsx, /src/components/Benefits.jsx, /src/components/CourseGrid.jsx, /src/components/Hero.jsx, /src/components/CTASection.jsx, /src/components/ContactSection.jsx, /src/components/EnquiryForm.jsx, /src/components/CourseCard.jsx, /src/pages/Courses.jsx, /src/pages/About.jsx[22m
+[2m8:46:47 pm[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+[2m8:46:47 pm[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+[2m8:46:47 pm[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+[2m8:46:47 pm[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+[2m8:46:47 pm[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+[2m8:46:47 pm[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+[2m8:46:47 pm[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+[2m8:46:47 pm[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+[2m8:46:47 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/hi/OneDrive/Desktop/videos/src/data/courses.js[39m:352:7
+[33m  350|      short: 'Reels â€¢ Shorts â€¢ Scripting â€¢ Editing â€¢ Growth â€¢ Monetization Basics',
+  351|      overview:
+  352|        'Create scroll-stopping content â€” scripting, shooting and editing short-form videos for Instagram Reels, YouTube Shorts and more, with practical growth strategies.',
+     |        ^
+  353|      note:
+  354|        'The course teaches the content creation process honestly â€” growth and income depend on consistent effort and platform rules. No guaranteed results are promised.',[39m
+      at TransformPluginContext._formatError (file:///C:/Users/hi/OneDrive/Desktop/videos/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///C:/Users/hi/OneDrive/Desktop/videos/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at TransformPluginContext.transform (file:///C:/Users/hi/OneDrive/Desktop/videos/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64259:14)
+      at async PluginContainer.transform (file:///C:/Users/hi/OneDrive/Desktop/videos/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///C:/Users/hi/OneDrive/Desktop/videos/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+[2m8:46:47 pm[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+[2m8:46:47 pm[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+[2m8:46:47 pm[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+[2m8:46:47 pm[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+[2m8:46:47 pm[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+[2m8:46:47 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/hi/OneDrive/Desktop/videos/src/data/courses.js[39m:352:7
+[33m  350|      short: 'Reels â€¢ Shorts â€¢ Scripting â€¢ Editing â€¢ Growth â€¢ Monetization Basics',
+  351|      overview:
+  352|        'Create scroll-stopping content â€” scripting, shooting and editing short-form videos for Instagram Reels, YouTube Shorts and more, with practical growth strategies.',
+     |        ^
+  353|      note:
+  354|        'The course teaches the content creation process honestly â€” growth and income depend on consistent effort and platform rules. No guaranteed results are promised.',[39m
+      at TransformPluginContext._formatError (file:///C:/Users/hi/OneDrive/Desktop/videos/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///C:/Users/hi/OneDrive/Desktop/videos/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at TransformPluginContext.transform (file:///C:/Users/hi/OneDrive/Desktop/videos/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64259:14)
+      at async PluginContainer.transform (file:///C:/Users/hi/OneDrive/Desktop/videos/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///C:/Users/hi/OneDrive/Desktop/videos/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///C:/Users/hi/OneDrive/Desktop/videos/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m8:48:07 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css, /src/components/MobileStickyBar.jsx, /src/components/Footer.jsx, /src/components/Header.jsx, /src/components/WhatsAppButton.jsx, /src/components/CompanyStrip.jsx, /src/components/Benefits.jsx, /src/components/CourseGrid.jsx, /src/components/Hero.jsx, /src/components/CTASection.jsx, /src/components/ContactSection.jsx, /src/components/EnquiryForm.jsx, /src/components/CourseCard.jsx, /src/pages/Courses.jsx, /src/pages/About.jsx[22m
