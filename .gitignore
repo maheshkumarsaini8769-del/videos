@@ -5,3 +5,7 @@ dist
 npm-debug.log*
 vite-dev.log
 
+
+dist-netlify
+.netlify
+
