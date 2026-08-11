@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /courses/advanced-tools#faq
+
+Sitemap: https://squaddigitalclasses.in/sitemap.xml

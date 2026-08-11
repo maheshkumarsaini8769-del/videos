@@ -3,7 +3,7 @@ import { useForm, useWatch } from 'react-hook-form'
 import { AnimatePresence, motion } from 'framer-motion'
 import { CheckCircle2, Loader2, Send, TriangleAlert } from 'lucide-react'
 import SectionHeading from './SectionHeading'
-import { courses } from '../data/courses'
+import { courses, SITE } from '../data/courses'
 import Reveal from './Reveal'
 
 const PHONE_REGEX = /^[6-9]\d{9}$/
@@ -20,16 +20,22 @@ export default function EnquiryForm() {
   const selectedCourse = useWatch({ control, name: 'course' })
   const [status, setStatus] = useState('idle') // idle | loading | success | error
 
-  const onSubmit = async () => {
+  const onSubmit = async (data) => {
     setStatus('loading')
     try {
-      await new Promise((resolve) => setTimeout(resolve, 900))
+      const body = new FormData()
+      body.append('form-name', 'enquiry')
+      body.append('name', data.name)
+      body.append('phone', data.phone)
+      body.append('course', data.course)
+      body.append('message', data.message || '')
+      await fetch('/', { method: 'POST', body })
       setStatus('success')
       reset()
       setTimeout(() => setStatus('idle'), 6000)
     } catch {
       setStatus('error')
-      setTimeout(() => setStatus('idle'), 5000)
+      setTimeout(() => setStatus('idle'), 7000)
     }
   }
 
@@ -56,8 +62,13 @@ export default function EnquiryForm() {
             <form
               onSubmit={handleSubmit(onSubmit)}
               noValidate
+              name="enquiry"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
               className="mt-10 space-y-5 rounded-3xl border border-white/10 bg-navy-800/60 p-6 shadow-card sm:p-9"
             >
+              <input type="hidden" name="bot-field" />
+              <input type="hidden" name="form-name" value="enquiry" />
               <div>
                 <label htmlFor="name" className="mb-1.5 block text-sm font-medium text-slate-300">
                   Name <span className="text-flame">*</span>
@@ -175,7 +186,7 @@ export default function EnquiryForm() {
                     exit={{ opacity: 0 }}
                     className="flex items-center justify-center gap-2 rounded-xl border border-flame/30 bg-flame/10 px-4 py-3 text-sm font-medium text-flame-400"
                   >
-                    <TriangleAlert size={16} /> Something went wrong. Please try again.
+                    <TriangleAlert size={16} /> Could not submit right now — please call us at {SITE.phone}.
                   </motion.p>
                 )}
               </AnimatePresence>

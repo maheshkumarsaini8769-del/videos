@@ -417,7 +417,7 @@ export const SITE = {
   brand: 'SQUAD DIGITAL CLASSES',
   short: 'SDC',
   phone: '7424986155',
-  phoneHref: 'tel:7424986155',
+  phoneHref: 'tel:+917424986155',
   address: ['BADARI VIHAR KE SAMNE', 'FIRST FLOOR, SIKAR'],
   mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Badari%20Vihar%20Sikar',
   name: 'SUMIT JAIN',
