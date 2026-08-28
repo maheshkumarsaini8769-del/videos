@@ -1,343 +1,720 @@
-1. Project Overview
+# 🚀 FINAL MASTER PROMPT — SDC SQUAD DIGITAL CLASSES PREMIUM WEBSITE
 
-Build a premium, modern, highly responsive website for “Squad Digital Classes (SDC)” based on the supplied promotional poster.
+You are not being asked to create a basic coaching website.
 
-The website should not simply copy the poster as a flat image. It should transform the poster into a real interactive website with:
+You are being asked to create a **high-end ₹80,000-class premium commercial website** for:
 
-Modern UI
-Responsive design
-Smooth animations
-Interactive cards
-Animated typography
-Scroll-based reveals
-Hover effects
-Course detail pages
-Contact/enquiry functionality
-Call and WhatsApp CTAs
-Mobile-first responsive layout
-Premium visual quality similar to modern websites made with 21st.dev / v0.dev-style UI patterns
-Most important requirement
+# SQUAD DIGITAL CLASSES
 
-The website must preserve every important piece of information from the poster, but present it in a much cleaner and more professional web layout.
+### SDC
 
-IMPORTANT
+The supplied reference image is the primary branding/content reference.
 
-The old promotional section containing:
+**Reference image path:**
 
-90% OFF
-₹7999
+`/mnt/data/1000092339.png`
 
-has been removed.
+Use the reference image carefully for:
 
-DO NOT recreate this pricing/discount section anywhere on the website.
+* Exact SDC logo
+* Brand identity
+* Course names
+* Course information
+* Typography inspiration
+* Existing visual language
+* Contact/location information
 
-2. Brand
-Brand Name
+## ABSOLUTELY IMPORTANT
 
-SQUAD DIGITAL CLASSES
+Do NOT create a generic education template.
 
-Short brand:
+Do NOT create a basic landing page.
 
-SDC
+Do NOT simply place the poster content into HTML sections.
 
-Logo text:
+Do NOT make it look AI-generated.
 
-SDC — Squad Digital Classes
+The result must look like a **real premium digital academy website designed by a professional UI/UX agency**.
 
-The SDC logo should appear prominently in the website header.
+Think:
 
-3. Overall Visual Direction
+**Premium EdTech + Digital Agency + Creative Academy + Modern SaaS-level UI**
 
-The design should be based heavily on the supplied poster.
+---
 
-Main visual style
-Dark premium background
-Black + deep navy gradients
-Neon lighting
-Yellow/gold highlights
-Red/orange promotional elements
-Blue/purple/green course accents
-Glowing borders
-Rounded cards
-Soft shadows
-Glassmorphism where appropriate
-High contrast typography
-Technology/digital education aesthetic
+# 1. CORE VISUAL DIRECTION
 
-The website should feel like:
+The entire website must use a:
 
-Digital Academy + Technology + Career + Modern AI
+## WHITE + WATERCOLOUR BLUE DESIGN SYSTEM
 
-It should NOT look like:
+The background should primarily be:
 
-Basic Bootstrap website
-Generic school website
-Plain white corporate website
-Static poster pasted into webpage
-Excessively rounded childish UI
-Overloaded animation everywhere
-4. Typography
+* Pure white
+* Soft sky blue
+* Very light aqua
+* Powder blue
+* Extremely subtle blue watercolor textures
+* Soft white gradients
+* Occasional deep blue for contrast
+* Small amounts of the SDC yellow/gold branding
 
-Typography should have a strong hierarchy.
+The website must NEVER become a dark theme.
 
-Hero
+No black/dark full-screen sections.
 
-Very large:
+No dark navbar.
 
-SQUAD
+No dark hero.
 
-Then:
+No dark course section.
 
-DIGITAL CLASSES
+Use dark navy/blue only for text and small contrast elements.
 
-The hero heading should be visually dominant.
+---
 
-Use large typography but keep it responsive.
+# 2. WATERCOLOUR BACKGROUND — VERY IMPORTANT
 
-Example:
+I want a **premium watercolor / liquid-paint visual background**, not a simple CSS blue gradient.
+
+Throughout the website use subtle:
+
+* Watercolor blue clouds
+* Soft aqua paint washes
+* White paper texture
+* Liquid blue blobs
+* Flowing translucent shapes
+* Soft ink/water dispersion
+* Blue watercolor edges
+* Extremely subtle animated fluid shapes
+
+The background should feel like:
+
+**white premium paper + blue watercolor + modern technology**
+
+NOT:
+
+❌ cheap gradient
+❌ neon background
+❌ gaming website
+❌ dark cyberpunk
+❌ random blobs everywhere
+
+The watercolor should remain subtle behind the content.
+
+Content cards should remain readable.
+
+---
+
+# 3. WATERCOLOUR ANIMATION
+
+The background should have REAL motion.
+
+Create a premium animated watercolor effect using either:
+
+* SVG animated blobs
+* CSS keyframe animation
+* Canvas
+* lightweight WebGL if genuinely necessary
+* GSAP
+* Lottie where appropriate
+
+The watercolor should slowly flow/morph.
+
+Animation should be:
+
+* slow
+* smooth
+* elegant
+* continuous
+* low CPU usage
+
+Do NOT make the background move aggressively.
+
+The effect should look like **liquid watercolor slowly spreading on white paper**.
+
+---
+
+# 4. REAL IMAGES — IMPORTANT CHANGE
+
+This website SHOULD use **real high-quality photography where it genuinely improves the website**.
+
+Do NOT use random AI-generated people.
+
+Do NOT use fake-looking AI students.
+
+Do NOT use obviously artificial human faces.
+
+Use professional, realistic photography for sections where photography makes sense.
+
+Recommended sources:
+
+* Unsplash
+* Pexels
+* properly licensed stock imagery
+* other legitimate royalty-free/licensed sources
+
+Use high-quality images related to:
+
+### Digital Marketing
+
+Real professional marketing workspace / laptop / analytics environment.
+
+### Graphic Design
+
+Real designer workspace with monitor, tablet, design work.
+
+### Video Editing
+
+Real professional editing workstation.
+
+### Video Shooting
+
+Real camera equipment / professional videography setup.
+
+### Personality Development
+
+Real professional presentation / communication environment.
+
+### AI / Advanced Tools
+
+Real modern workstation / professional technology environment.
+
+---
+
+# 5. IMPORTANT IMAGE RULE
+
+Do NOT put photographs everywhere.
+
+Use a deliberate combination:
+
+### REAL PHOTOGRAPHY
+
+for:
+
+* Hero visual
+* selected course imagery
+* learning environment
+* career section
+* selected supporting sections
+
+### HIGH-QUALITY 3D / SVG / ILLUSTRATIONS
+
+for:
+
+* icons
+* feature cards
+* process steps
+* decorative visuals
+* small course graphics
+
+This combination should create a premium editorial website.
+
+---
+
+# 6. HERO — MUST BE IMPRESSIVE
+
+The first screen is extremely important.
+
+Build a large premium hero section.
+
+Layout:
+
+LEFT:
+
+Small badge:
+
+**SQUAD DIGITAL CLASSES**
+
+Large heading:
+
+# DIGITAL SKILLS.
+
+# REAL PROJECTS.
+
+# BETTER CAREER.
+
+Then Hindi supporting copy:
+
+**आज की digital दुनिया के लिए practical skills सीखें और अपने career को future-ready बनाएं.**
+
+CTA buttons:
+
+### EXPLORE COURSES
+
+### APPLY NOW
+
+Small trust row:
+
+**Expert Trainers**
+|
+**Practical Learning**
+|
+**Live Projects**
+
+RIGHT:
+
+Use a premium REAL photograph or professional visual composition.
+
+The image should communicate:
+
+**digital learning + technology + creativity + career**
+
+Do NOT use a generic smiling student stock photo.
+
+Use image masking:
+
+* rounded asymmetric shape
+* soft watercolor edge
+* blue glow
+* subtle depth
+* floating cards around the image
+
+---
+
+# 7. HERO ANIMATION
+
+When website loads:
+
+1. Watercolor background slowly appears
+2. Logo fades in
+3. Heading slides upward
+4. Supporting text follows
+5. CTA buttons appear
+6. Hero image smoothly scales/fades in
+7. Floating UI cards animate afterward
+
+Use staggered animation.
+
+Do NOT animate every element simultaneously.
+
+Hero must feel like a premium website opening sequence.
+
+---
+
+# 8. HERO FLOATING UI CARDS
+
+Around the hero image create small floating cards such as:
+
+**100% Practical**
+
+**Live Projects**
+
+**Career Skills**
+
+**AI Tools**
+
+These should float very subtly.
+
+Use glass/white cards with:
+
+* soft shadows
+* blue borders
+* small icons
+
+---
+
+# 9. EXACT LOGO REQUIREMENT
+
+Use the **same SDC logo shown in the supplied poster**.
+
+Do NOT redesign the logo.
+
+Do NOT generate a different logo.
+
+Do NOT replace it with a text-only SDC logo.
+
+The original logo has:
+
+**SDC**
+
+and:
+
+**Squad Digital Classes**
+
+Use that same visual identity.
+
+If the logo needs to be extracted from the supplied reference image, crop/extract it carefully and clean it for website usage.
+
+Do not distort it.
+
+---
+
+# 10. NAVBAR
+
+Create an extremely polished sticky navbar.
 
 Desktop:
 
-SQUAD
-DIGITAL CLASSES
+LEFT:
 
-Mobile:
+Exact SDC logo
 
-SQUAD
-DIGITAL
-CLASSES
+CENTER:
 
-Avoid making every text huge.
+* Home
+* Courses
+* About
+* Learning
+* Contact
 
-5. Header
+RIGHT:
 
-Create a sticky responsive header.
+Search icon
 
-Desktop
+**Apply Now**
 
-Left:
+Navbar should have:
 
-SDC Logo
+* white translucent background
+* subtle blur
+* thin bottom border
+* very soft shadow
 
-Navigation:
+It must blend with the watercolor background.
 
-Home
-Courses
-About
-Benefits
-Contact
+---
 
-Right:
+# 11. NAVBAR SCROLL BEHAVIOUR
 
-Enroll Now
+This requirement is mandatory.
 
-or
+### When scrolling DOWN:
 
-Call Now
+Navbar smoothly moves upward and hides.
 
-Mobile
+### When scrolling UP:
+
+Navbar smoothly comes back.
+
+### At top:
+
+Navbar remains visible.
+
+Use JavaScript scroll-direction detection.
+
+Animation:
+
+`transform: translateY()`
+
+with smooth transition.
+
+Do NOT cause layout jumping.
+
+---
+
+# 12. SEARCH
+
+Only show a SEARCH ICON in navbar.
+
+Do NOT display a permanent search bar.
+
+Click search icon:
+
+Open a premium full-width search overlay.
+
+Input:
+
+**Search courses, skills or topics...**
+
+Search should search:
+
+* course names
+* course descriptions
+* skills
+* topics
+
+Example:
+
+`video`
+
+Results:
+
+* Video Editing
+* Video Shooting
+
+Example:
+
+`AI`
+
+Result:
+
+* Advanced Tools
+
+Add animated search results.
+
+ESC should close the search overlay.
+
+---
+
+# 13. APPLICATION POPUP — FIRST VISIT
+
+When the website opens, show an elegant application modal.
+
+IMPORTANT:
+
+Do NOT immediately make it feel like spam.
+
+Use a premium modal.
+
+Layout:
+
+LEFT:
+
+Beautiful course/career visual.
+
+RIGHT:
+
+### START YOUR DIGITAL CAREER
+
+Text:
+
+**Apne liye suitable course select karein aur SDC ke saath apni learning journey start karein.**
+
+Fields:
+
+### Full Name
+
+`Enter your full name`
+
+### Mobile Number
+
+`Enter 10-digit mobile number`
+
+### Select Course(s)
+
+Allow MULTIPLE selection.
+
+Courses:
+
+☑ Digital Marketing
+☑ Graphic Design
+☑ Video Editing
+☑ Video Shooting
+☑ Personality Development
+☑ Advanced Tools
+
+Button:
+
+# SUBMIT APPLICATION
+
+Small text:
+
+**Your information will only be used to contact you regarding your enquiry.**
+
+Also include:
+
+**Maybe Later**
+
+and close icon.
+
+---
+
+# 14. MULTIPLE COURSE SELECTION
+
+This MUST work correctly.
+
+A visitor can select:
+
+1 course
+
+OR
+
+2 courses
+
+OR
+
+3 courses
+
+OR
+
+all courses.
+
+Do NOT use a normal single-select dropdown.
+
+Use attractive selectable course cards/chips.
+
+Selected state:
+
+* blue border
+* blue check icon
+* subtle background
+* smooth animation
+
+Example:
+
+`✓ Digital Marketing`
+
+---
+
+# 15. FORM VALIDATION
+
+Validate:
+
+### Name
+
+Required.
+
+### Mobile
+
+Required.
+
+Exactly/appropriately validate Indian 10-digit mobile numbers.
+
+### Course
+
+At least one required.
+
+Show clean inline errors.
+
+Do not use ugly browser alerts.
+
+---
+
+# 16. SUCCESS STATE
+
+After successful submission:
+
+Do NOT simply say:
+
+`Form submitted`
+
+Instead show a premium animated success screen:
+
+Large animated check.
+
+### APPLICATION RECEIVED
+
+**Thank you! आपकी enquiry successfully receive हो गई है.**
+
+**Our team will contact you shortly.**
 
 Show:
 
-SDC logo
-Hamburger menu
-CTA button
+**Selected Courses:**
 
-Clicking hamburger opens an animated navigation drawer.
+Digital Marketing
+Video Editing
 
-Header behavior
+Then:
 
-Initially:
+**Continue Exploring**
 
-Transparent/dark background.
+---
 
-After scrolling:
+# 17. BACKEND ARCHITECTURE
 
-Dark glass background
-Slight blur
-Thin glowing border
-Compact height
-6. HERO SECTION
+Do not fake a database.
 
-Hero section should be the strongest section of the website.
+Build the form architecture so it can connect to a real backend.
 
-Main heading
-SQUAD
-DIGITAL CLASSES
-Tagline
-SKILL सीखें | CAREER बनाएं | FUTURE संवारें
+Expected application data:
 
-The Hindi/English combination should remain.
+```text
+name
+mobile
+selectedCourses[]
+timestamp
+source
+```
 
-7. Hero Visual
+Use a clean API abstraction.
 
-On the right side of desktop hero:
+Example:
 
-Show a high-quality visual representing:
+```text
+POST /api/applications
+```
 
-Young students
-Digital learning
-Laptop
-Technology
-AI
-Social media
-Creative tools
+Do not expose secret keys in frontend.
 
-Floating around the visual:
+If backend is not currently available, keep the API integration clearly separated so it can be connected later without rewriting the UI.
 
-Instagram
-YouTube
-Meta
-Adobe Premiere Pro
-Adobe Illustrator
-AI icons
-Digital/analytics symbols
+---
 
-These should have subtle floating animations.
+# 18. COURSE SECTION
 
-Animation
+Create a high-end course showcase.
 
-Hero load:
+Heading:
 
-Background appears
-Logo fades in
-SQUAD reveals
-DIGITAL CLASSES slides/reveals
-Tagline fades in
-Hero image enters
-Floating icons start moving
+# LEARN SKILLS THAT MATTER
 
-Animation should be smooth, not flashy.
+Subheading:
 
-8. Hero Campaign Banner
+**Practical digital courses designed for today's career opportunities.**
 
-Below the hero heading:
+Use six premium course cards.
 
-अब ALL COURSE पर
+Do NOT make them look like six basic Bootstrap cards.
 
-Create a red/yellow promotional ribbon.
+---
 
-Important:
+# 19. COURSE CARD DESIGN
 
-Do NOT put the old ₹7999 / 90% OFF offer here.
+Each course card should contain:
 
-Only keep the campaign messaging.
+* Real relevant image
+* Course number
+* Course name
+* Short description
+* Skills
+* Duration
+* Explore button
 
-9. Secondary Banner
+Use large visual imagery.
 
-Add:
+Card design:
 
-AB NAYE JMANAE KE SATH NAYE MEDIA KO JAANE
+* White surface
+* Watercolor blue edge
+* soft shadow
+* 20–28px rounded corners
+* premium spacing
 
-This should be presented as a highlighted horizontal banner.
+On hover:
 
-Use:
+* image zoom 1.04
+* card moves upward
+* shadow increases
+* blue accent appears
+* CTA arrow moves
 
-Yellow background/accent
-Dark text
-Subtle glow
-Decorative stars/particles
-10. Career Section
+Animation should be smooth.
 
-Create a highlighted career panel.
+---
 
-Heading
-अब आपके CAREER की
-उड़ान की बाधा खत्म!
-Supporting bullets
-✓ अब आप भी अपने भविष्य को
-  DIGITAL के माध्यम से
-  सुनहरा बनाने का मौका पाएं!
+# 20. COURSE 01 — DIGITAL MARKETING
 
-The panel should visually communicate:
+Title:
 
-Learn → Skill → Career
+**01 — DIGITAL MARKETING**
 
-Use a modern digital/career illustration.
+Content:
 
-11. Limited Seat Section
-
-Create a small urgency component.
-
-Text
-LIMITED SEAT
-जल्दी आएं
-जल्दी ENROLL पाएं!
-
-Include a clock/urgency visual.
-
-Animation
-
-Very subtle pulse.
-
-Do NOT make it constantly shake or flash.
-
-12. Courses Section
-
-Section heading:
-
-हमारे 6 पावरफुल कोर्स
-
-Add decorative stars around the heading similar to the poster.
-
-Desktop layout:
-
-3 cards
-3 cards
-
-Tablet:
-
-2 cards
-2 cards
-2 cards
-
-Mobile:
-
-1 card
-1 card
-1 card
-...
-13. COURSE 1 — DIGITAL MARKETING
-Title
-1. DIGITAL MARKETING
-Topics
 SEO
 Social Media
 Google Ads
 YouTube
-Email
-Content
-More
-Duration
-DURATION: 2–3 MONTHS
-Card style
+Email Marketing
+Content Marketing
 
-Blue/light-blue visual theme.
+Duration:
 
-Visual
+**2–3 MONTHS**
 
-Digital marketing illustration containing concepts such as:
+Use a REAL professional marketing-related photograph.
 
-Megaphone
-Social media
-Analytics
-Growth chart
-Ads
-Detail page should include
-SEO
-Social media marketing
-Google Ads
-YouTube marketing
-Email marketing
-Content marketing
-Practical projects
-Tools
-Real-world workflow
-Career applications
-14. COURSE 2 — GRAPHIC DESIGN
-Title
-2. GRAPHIC DESIGN
-Topics
+---
+
+# 21. COURSE 02 — GRAPHIC DESIGN
+
+Title:
+
+**02 — GRAPHIC DESIGN**
+
+Content:
+
 Photoshop
 Illustrator
 Canva
@@ -345,741 +722,1458 @@ Logo
 Banner
 Poster
 Branding
-Duration
-DURATION: 2–3 MONTHS
-Card style
 
-Purple theme.
+Duration:
 
-Detail page
+**2–3 MONTHS**
 
-Include:
+Use a REAL professional graphic designer/workstation photograph.
 
-Photoshop
-Illustrator
-Canva
-Logo design
-Banner design
-Poster design
-Branding
-Social media creatives
-Portfolio projects
-15. COURSE 3 — VIDEO EDITING
-Title
-3. VIDEO EDITING
-Topics
+---
+
+# 22. COURSE 03 — VIDEO EDITING
+
+Title:
+
+**03 — VIDEO EDITING**
+
+Content:
+
 Premiere Pro
 After Effects
 Color Grading
 Reels Editing
 YouTube Editing
-More
-Duration
-DURATION: 2–3 MONTHS
-Card theme
 
-Green.
+Duration:
 
-Detail page
+**2–3 MONTHS**
 
-Include:
+Use REAL professional video editing workstation photography.
 
-Premiere Pro
-After Effects
-Video cutting
-Transitions
-Color grading
-Reels
-YouTube videos
-Motion graphics
-Practical editing projects
-16. COURSE 4 — VIDEO SHOOTING
-Title
-4. VIDEO SHOOTING
-Topics
+---
+
+# 23. COURSE 04 — VIDEO SHOOTING
+
+Title:
+
+**04 — VIDEO SHOOTING**
+
+Content:
+
 Camera Basics
 Lighting
 Composition
-Outdoor/Indoor Shoot
+Indoor/Outdoor Shoot
 Video Storytelling
 Practical Shoot
-Duration
-DURATION: 2–3 MONTHS
-Card theme
 
-Orange.
+Duration:
 
-Detail page
+**2–3 MONTHS**
 
-Include:
+Use real professional camera/video production imagery.
 
-Camera basics
-Camera settings
-Lighting
-Composition
-Indoor shooting
-Outdoor shooting
-Storytelling
-Practical shooting
-Real-world projects
-17. COURSE 5 — PERSONALITY DEVELOPMENT
-Title
-5. PERSONALITY DEVELOPMENT
-Topics
+---
+
+# 24. COURSE 05 — PERSONALITY DEVELOPMENT
+
+Title:
+
+**05 — PERSONALITY DEVELOPMENT**
+
+Content:
+
 Communication
 Confidence Building
 Public Speaking
 Body Language
 Interview Skills
 Time Management
-Duration
-DURATION: 2–3 MONTHS
-Card theme
 
-Blue.
+Duration:
 
-Detail page
+**2–3 MONTHS**
 
-Include:
+Use authentic professional presentation/communication photography.
 
-Communication
-Confidence
-Public speaking
-Body language
-Interview preparation
-Time management
-Professional communication
-Practical exercises
-18. COURSE 6 — ADVANCED TOOLS
-Title
-6. ADVANCED TOOLS
-Topics
-Canva Advance
-Adobe Firefly (AI)
+---
+
+# 25. COURSE 06 — ADVANCED TOOLS
+
+Title:
+
+**06 — ADVANCED TOOLS**
+
+Content:
+
+Canva Advanced
+Adobe Firefly AI
 ChatGPT
 AI Tools
 Automation
 Content Creation
 Productivity Tools
-Duration
-DURATION: 2–3 MONTHS
-Card theme
 
-Pink/red.
+Duration:
 
-Detail page
+**2–3 MONTHS**
+
+Use modern technology/workstation photography plus subtle AI graphics.
+
+---
+
+# 26. COURSE DETAIL EXPERIENCE
+
+When user clicks:
+
+**EXPLORE COURSE**
+
+Open a premium course detail modal/page.
 
 Include:
 
-Canva
-Adobe Firefly
-ChatGPT
-AI tools
-Automation
-AI-assisted content creation
-Productivity tools
-Practical workflows
+* Large hero image
+* Course name
+* Overview
+* What you'll learn
+* Duration
+* Practical training
+* Projects
+* Tools covered
+* Career applications
+* Apply button
 
-Do not make false claims about AI capabilities.
+CTA:
 
-19. Course Card Interactions
+**APPLY FOR THIS COURSE**
 
-Each course card must have:
+If clicked, automatically open application form with that course pre-selected.
 
-Default
-Image
-Course number
-Course title
-Topics
-Duration
-Hover
-Card moves upward slightly
-Border becomes brighter
-Glow increases
-Image zooms slightly
-CTA appears or becomes more prominent
+User must still be able to select additional courses.
 
-Example:
+---
 
-VIEW COURSE →
-Click
-
-Open course detail page.
-
-20. Course Detail Page
-
-Every course should have its own page.
-
-Example:
-
-/courses/digital-marketing
-
-Page structure:
-
-Course hero
-Course overview
-What you will learn
-Modules
-Tools
-Practical projects
-Skills gained
-Career applications
-Duration
-FAQ
-Enroll CTA
-Call CTA
-WhatsApp CTA
-21. Benefits Section
-
-Create a section containing all seven benefits.
-
-1
-EXPERT TRAINERS
-2
-100% PRACTICAL
-3
-LIVE PROJECTS
-4
-CERTIFICATE PROVIDED
-5
-PLACEMENT SUPPORT
-6
-PERSONAL MENTORSHIP
-7
-LIFETIME SUPPORT
-
-Use icons for each.
-
-Animation
-
-As user scrolls:
-
-Icons reveal
-Text fades upward
-Cards appear sequentially
-22. Career Opportunity Section
-
-Heading:
-
-COURSE करने के बाद पाएं
-SUNAHARA MAUKA
-
-Supporting text:
-
-बड़ी COMPANY के साथ मिलकर
-काम करने का मौका!
-
-Display:
-
-Google
-Meta
-amazon
-TATA
-Infosys
-Microsoft
-Important
-
-Do not automatically claim:
-
-"You will get a job at Google."
-
-Do not claim guaranteed placement.
-
-The company logos should be presented according to the supplied marketing material unless verified partnership information is later provided.
-
-23. CTA Section
-
-Create a large conversion section.
-
-Main CTA
-CALL NOW
-Name
-SUMIT JAIN
-Phone
-7424986155
-
-Phone number must be clickable.
-
-Use:
-
-tel:7424986155
-24. WhatsApp
-
-Add WhatsApp CTA.
-
-Example:
-
-Chat on WhatsApp
-
-Use the actual WhatsApp link once the official WhatsApp number is confirmed.
-
-Do not create a fake WhatsApp link.
-
-25. Address
-
-Display exactly:
-
-ADDRESS:
-
-BADARI VIHAR KE SAMNE
-FIRST FLOOR, SIKAR
-
-Create a location card.
-
-Possible features:
-
-Location icon
-Address
-Open map button
-Google Maps embed/link after exact location is confirmed
-26. Enquiry Form
+# 27. INTRODUCTION SECTION
 
 Create:
 
-Interested in joining?
+# MORE THAN A COURSE.
 
-Fields:
+# IT'S A SKILL JOURNEY.
 
-Name
-Enter your name
-Phone
-Enter mobile number
-Course
+Explain SDC professionally.
 
-Dropdown:
+Example direction:
 
-Digital Marketing
-Graphic Design
-Video Editing
-Video Shooting
-Personality Development
-Advanced Tools
-Message
+**SDC Squad Digital Classes focuses on practical digital skills that help learners understand today's tools, workflows and creative technologies.**
 
-Optional.
+Use:
 
-CTA
-ENQUIRE NOW
-27. Form Validation
+* real learning environment imagery
+* watercolor background
+* animated statistics/cards only if actual verified numbers exist
 
-Frontend validation:
+DO NOT invent:
 
-Name required
-Phone required
-Valid Indian phone number
-Course required
+* student counts
+* placement percentages
+* years of experience
+* salary figures
+* company partnerships
 
-Backend validation must also be implemented if API/backend exists.
+---
 
-After successful submission:
+# 28. WHY SDC SECTION
 
-Thank you! Your enquiry has been submitted.
+Create premium feature cards:
 
-On error:
+### EXPERT TRAINERS
 
-Something went wrong. Please try again.
+Learn with practical guidance.
 
-Do not display raw API/server errors to users.
+### 100% PRACTICAL
 
-28. Animation System
+Focus on hands-on learning.
 
-Use modern animation but keep it professional.
+### LIVE PROJECTS
 
-Hero
-Text reveal
-Masked text animation
-Fade
-Slide
-Parallax
-Cards
-Scroll reveal
-Stagger
-Hover lift
-Image zoom
-Glow
-Buttons
+Practice through realistic projects.
 
-Hover:
+### CERTIFICATE
 
-translateY(-2px)
+Course completion certificate.
 
-with subtle glow.
+### PLACEMENT SUPPORT
+
+Career guidance and support.
+
+### PERSONAL MENTORSHIP
+
+Individual learning guidance.
+
+### LIFETIME SUPPORT
+
+Continued learning support.
+
+Use animated line icons.
+
+---
+
+# 29. ANIMATION STYLE FOR FEATURES
+
+On scroll:
+
+Cards appear one-by-one.
+
+Use:
+
+* fade
+* translateY
+* slight scale
+
+Icons can have subtle SVG line-drawing animations.
+
+Do not rotate entire cards.
+
+---
+
+# 30. LEARNING JOURNEY
+
+Create a beautiful horizontal/vertical timeline:
+
+### 01
+
+CHOOSE
+
+Choose your course.
+
+### 02
+
+LEARN
+
+Build foundational knowledge.
+
+### 03
+
+PRACTICE
+
+Work on practical assignments.
+
+### 04
+
+CREATE
+
+Build real projects.
+
+### 05
+
+GROW
+
+Use your skills for career opportunities.
+
+Animate the timeline as the user scrolls.
+
+---
+
+# 31. REAL IMAGE + WATERCOLOUR SECTION
+
+Create a large editorial section:
+
+LEFT:
+
+Large professional real photograph.
+
+RIGHT:
+
+### LEARN BY DOING
+
+Content about practical learning.
+
+Behind the image:
+
+subtle watercolor blue brush effect.
+
+Image should slightly overlap the section boundary.
+
+This should look like an expensive agency-designed section.
+
+---
+
+# 32. CAREER SECTION
+
+Create:
+
+# YOUR SKILLS CAN OPEN NEW DOORS
+
+Use premium white/blue layout.
+
+Show company-style logo cards:
+
+Google
+Meta
+Amazon
+TATA
+Infosys
+Microsoft
+
+IMPORTANT:
+
+Do NOT claim guaranteed jobs at these companies.
+
+Do NOT say:
+
+"Placement guaranteed in Google."
+
+Instead say:
+
+**Build skills relevant to today's digital industry and prepare yourself for broader career opportunities.**
+
+---
+
+# 33. COMPANY LOGO ANIMATION
+
+Logos should appear in elegant horizontal motion.
+
+Use:
+
+* fade
+* slight horizontal movement
+* hover scale
+
+Do not use a distracting infinite marquee.
+
+---
+
+# 34. LOCATION SECTION
+
+Create a premium location section.
+
+Address:
+
+**BADARI VIHAR KE SAMNE
+FIRST FLOOR, SIKAR**
+
+Create a visual map-style design.
+
+If actual map location coordinates are not confirmed:
+
+DO NOT invent exact coordinates.
+
+Use a stylized map illustration with a location pin.
+
+Button:
+
+**GET DIRECTIONS**
+
+If actual verified Google Maps URL/coordinates are later provided, make the button configurable.
+
+---
+
+# 35. CONTACT SECTION
+
+Heading:
+
+# LET'S START YOUR JOURNEY
+
+Contact cards:
+
+### CALL
+
+**7742735762**
+
+### WHATSAPP
+
+**7742735762**
+
+### LOCATION
+
+**Badari Vihar Ke Samne, First Floor, Sikar**
+
+Buttons:
+
+**CALL NOW**
+
+**WHATSAPP**
+
+---
+
+# 36. FLOATING WHATSAPP BUTTON
+
+Mandatory.
+
+Position:
+
+**LEFT SIDE**
+
+Near bottom.
+
+WhatsApp icon.
+
+Number:
+
+**7742735762**
 
 Click:
 
-scale(0.97)
-Background
+Open WhatsApp with pre-filled message:
 
-Use subtle:
+**Hello SDC, mujhe courses ke baare mein information chahiye.**
 
-Gradient movement
-Glow
-Particles
-Light streaks
+Animation:
 
-Avoid excessive particle effects.
+* subtle pulse
+* soft glow
+* hover scale
 
-29. Text Animation
+Do NOT make it bounce continuously.
 
-Important visual feature:
+---
 
-Use animated typography for selected phrases.
+# 37. FLOATING CALL BUTTON
 
-For example:
+Place below/near WhatsApp button.
 
-SKILL सीखें
-CAREER बनाएं
-FUTURE संवारें
+Phone icon.
 
-Can animate sequentially.
+Number:
 
-But don't animate every single text element.
+**7742735762**
 
-30. Scroll Experience
+Click:
 
-Scrolling should feel premium.
+`tel:7742735762`
 
-Sections should reveal naturally.
+On desktop/mobile.
 
-Example:
+Both buttons must not block content.
 
-Hero
- ↓
-Campaign
- ↓
-Career
- ↓
-Courses
- ↓
-Benefits
- ↓
-Career Opportunity
- ↓
-Contact
- ↓
-Footer
+On mobile, ensure they do not overlap browser navigation or important CTA buttons.
 
-Each section should have controlled entrance animation.
+---
 
-31. Background
+# 38. FOOTER
 
-Use:
+Create a premium footer.
 
-#050816
+Use white/light-blue design, NOT dark.
 
-or similar dark navy.
+Include:
 
-Add:
+SDC logo
 
-radial gradients
-blue glow
-yellow glow
-red glow
-subtle grid
-stars/particles
+**SQUAD DIGITAL CLASSES**
 
-Do not make the background too bright.
+Description:
 
-32. Responsive Design
+**Practical digital skills सीखें और अपने career को future-ready बनाएं.**
 
-Must work on:
+Links:
 
-320px
-375px
-390px
-414px
-480px
-768px
-1024px
-1280px
-1440px
-1920px
-
-No:
-
-Horizontal scrolling
-Cropped text
-Overflow
-Broken cards
-Overlapping sections
-Tiny unreadable text
-33. Mobile Experience
-
-Mobile should NOT simply be desktop scaled down.
-
-Create a proper mobile layout.
-
-Mobile hero
-SDC Logo
-
-SQUAD
-DIGITAL CLASSES
-
-SKILL सीखें
-CAREER बनाएं
-FUTURE संवारें
-
-[Hero image]
-
-[Enroll Now]
-Mobile CTA
-
-Consider a sticky bottom bar:
-
-📞 Call
-💬 WhatsApp
-📝 Enroll
-
-This is especially useful because the poster is conversion-focused.
-
-34. Accessibility
-
-Implement:
-
-Semantic HTML
-Keyboard navigation
-Focus states
-Alt text
-Accessible buttons
-Accessible forms
-Proper heading hierarchy
-Good contrast
-Reduced-motion support
-
-Use:
-
-prefers-reduced-motion
-
-to reduce animations.
-
-35. Performance
-
-Do not sacrifice performance for visual effects.
-
-Implement:
-
-WebP/AVIF images
-Lazy loading
-Code splitting
-Optimized assets
-Avoid huge background videos
-Avoid unnecessary libraries
-Use GPU-friendly transform/opacity animations
-
-Target:
-
-Fast initial load
-Smooth scrolling
-Good mobile performance
-36. SEO
-
-Add:
-
-Title
-Squad Digital Classes | Learn Digital Skills & Build Your Career
-Meta description
-
-Create a useful description mentioning:
-
-Digital Marketing
-Graphic Design
-Video Editing
-Video Shooting
-Personality Development
-Advanced AI Tools
-Sikar
-
-Also add:
-
-Open Graph
-Twitter/X metadata
-Sitemap
-Robots
-Canonical URL
-Structured data where appropriate
-37. Footer
-
-Footer should include:
-
-Brand
-SQUAD DIGITAL CLASSES
-Quick links
 Home
 Courses
 About
-Benefits
+Learning
 Contact
+Apply Now
+
+Contact:
+
+**7742735762**
+
+WhatsApp:
+
+**7742735762**
+
+Location:
+
+**Badari Vihar Ke Samne, First Floor, Sikar**
+
+---
+
+# 39. REAL WEBSITE FEEL
+
+The website must have depth.
+
+Use:
+
+* layered sections
+* image overlaps
+* watercolor textures
+* glass cards
+* soft shadows
+* subtle borders
+* large typography
+* strong whitespace
+* visual rhythm
+
+Do NOT make every section identical.
+
+Every section should have a slightly different composition while maintaining the same design system.
+
+---
+
+# 40. TYPOGRAPHY
+
+Use a professional font combination.
+
+Recommended:
+
+**Inter / Manrope / Plus Jakarta Sans**
+
+For Hindi:
+
+Use a proper Devanagari-supported font such as:
+
+**Noto Sans Devanagari**
+
+Typography hierarchy must be strong.
+
+Hero:
+
+Very large.
+
+Section headings:
+
+Large.
+
+Body:
+
+Comfortable reading size.
+
+Do not use too many fonts.
+
+---
+
+# 41. BUTTON DESIGN
+
+Buttons should feel premium.
+
+Primary:
+
+Blue gradient / deep blue
+
+Secondary:
+
+White with blue border
+
+Hover:
+
+* subtle lift
+* shadow
+* arrow movement
+* smooth background transition
+
+Do not use cheap glowing neon buttons.
+
+---
+
+# 42. SCROLL ANIMATION SYSTEM
+
+Use IntersectionObserver or GSAP.
+
+Every major section should have controlled entrance animation.
+
+Possible effects:
+
+* fade-up
+* reveal
+* clip-path image reveal
+* stagger
+* scale-in
+* horizontal reveal
+
+Use animation hierarchy.
+
+Not every element should animate.
+
+---
+
+# 43. PREMIUM PAGE TRANSITION
+
+On initial page load:
+
+Use a very short elegant loading transition.
+
+Display:
+
+SDC logo
+
+Then smoothly reveal the page.
+
+Do NOT make users wait several seconds.
+
+Maximum perceived loading experience should be extremely short.
+
+---
+
+# 44. IMAGE REVEAL ANIMATION
+
+When course images enter viewport:
+
+Use:
+
+* clip-path reveal
+* slight zoom
+* opacity transition
+
+Example:
+
+Image starts slightly zoomed and clipped.
+
+Then smoothly reveals into position.
+
+This is important for the premium visual feel.
+
+---
+
+# 45. WATERCOLOUR DECORATIVE ELEMENTS
+
+Use watercolor brush effects behind:
+
+* hero
+* course section
+* learning journey
+* contact
+* selected cards
+
+Do not use the same blob repeatedly.
+
+Create variations:
+
+* brush stroke
+* liquid wash
+* soft circular stain
+* watercolor wave
+* blue ink dispersion
+
+Keep opacity low.
+
+---
+
+# 46. DO NOT MAKE THE WEBSITE TOO BUSY
+
+Premium design means restraint.
+
+Avoid:
+
+❌ 20 animations running at once
+❌ flashing elements
+❌ excessive gradients
+❌ giant shadows
+❌ random icons
+❌ unnecessary 3D objects
+❌ endless parallax
+❌ background video
+❌ excessive glassmorphism
+
+Use whitespace.
+
+---
+
+# 47. MOBILE EXPERIENCE
+
+Mobile must NOT simply be the desktop version squeezed smaller.
+
+Create intentional mobile layout.
+
+Mobile:
+
+* compact navbar
+* hamburger menu
+* search icon
+* Apply button
+* one course card per row
+* optimized images
+* readable typography
+* comfortable buttons
+* popup fits viewport
+* floating contact buttons correctly positioned
+
+No horizontal overflow.
+
+---
+
+# 48. TABLET EXPERIENCE
+
+Tablet:
+
+2-column course grid.
+
+Proper spacing.
+
+Navbar adapts.
+
+Hero switches intelligently between:
+
+two-column
+
+and
+
+stacked layout.
+
+---
+
+# 49. DESKTOP EXPERIENCE
+
+Desktop:
+
+Hero two-column.
+
+Courses 3-column.
+
+Premium image compositions.
+
+Large whitespace.
+
+Balanced max-width around:
+
+1200–1400px.
+
+Do not stretch text across the entire screen.
+
+---
+
+# 50. PERFORMANCE
+
+Despite heavy visuals, website must remain fast.
+
+Use:
+
+* WebP/AVIF images
+* lazy loading
+* responsive image sizes
+* compressed SVG
+* optimized Lottie
+* minimal JavaScript
+* code splitting where useful
+
+Do NOT load giant 5–10MB images.
+
+Do NOT use huge background videos.
+
+---
+
+# 51. ACCESSIBILITY
+
+Implement:
+
+* semantic HTML
+* proper headings
+* labels
+* keyboard navigation
+* visible focus states
+* alt text
+* ARIA labels for icon buttons
+* sufficient color contrast
+
+Search icon must have accessible label.
+
+WhatsApp and call buttons must have accessible labels.
+
+---
+
+# 52. SEO
+
+Title:
+
+**SDC Squad Digital Classes | Digital Skills & Career Courses in Sikar**
+
+Description:
+
+**Learn Digital Marketing, Graphic Design, Video Editing, Video Shooting, Personality Development and Advanced AI Tools with SDC Squad Digital Classes in Sikar.**
+
+Use:
+
+* proper H1
+* H2
+* H3
+* meta description
+* Open Graph
+* favicon
+* structured semantic HTML
+
+---
+
+# 53. CONTACT NUMBER — ABSOLUTE RULE
+
+Use this number:
+
+# 7742735762
+
+Use it for:
+
+* Contact
+* WhatsApp
+* Call
+* Application-related communication
+* Footer
+
+DO NOT use:
+
+**7424986155**
+
+That number appears in the reference poster but is NOT the website contact number.
+
+The correct website number is:
+
+**7742735762**
+
+---
+
+# 54. WHATSAPP NUMBER — ABSOLUTE RULE
+
+WhatsApp:
+
+**7742735762**
+
+Do not accidentally copy the poster's old number.
+
+---
+
+# 55. NO FAKE INFORMATION
+
+Never invent:
+
+* testimonials
+* reviews
+* ratings
+* student count
+* placement percentage
+* salary statistics
+* company partnerships
+* trainer names
+* years of experience
+
+If real information isn't provided, design the section without fake claims.
+
+Professional websites do not need fabricated credibility.
+
+---
+
+# 56. COURSE CONTENT MUST MATCH REFERENCE
+
+Use these exact courses:
+
+1. Digital Marketing
+2. Graphic Design
+3. Video Editing
+4. Video Shooting
+5. Personality Development
+6. Advanced Tools
+
+Duration:
+
+**2–3 Months**
+
+---
+
+# 57. SEARCH + COURSE SYSTEM
+
+Implement actual JavaScript functionality.
+
+Search results should dynamically update.
+
+Course filters should work.
+
+Multiple course selection must work.
+
+Course detail modal must work.
+
+Apply button must work.
+
+Navbar links must work.
+
+No dead buttons.
+
+---
+
+# 58. FORM UX
+
+Form should feel like a real application system.
+
+Use:
+
+* floating labels or clean labels
+* validation
+* loading state
+* disabled submit during request
+* success state
+* error state
+
+Submit button states:
+
+Normal:
+
+**SUBMIT APPLICATION**
+
+Loading:
+
+**SUBMITTING...**
+
+Success:
+
+**APPLICATION RECEIVED**
+
+Error:
+
+**TRY AGAIN**
+
+---
+
+# 59. ERROR HANDLING
+
+If API fails:
+
+Show:
+
+**Something went wrong. Please try again or contact us on WhatsApp.**
+
+Provide WhatsApp CTA.
+
+Never falsely tell user that application was submitted when API failed.
+
+---
+
+# 60. MICRO INTERACTIONS
+
+Implement high-quality micro-interactions:
+
+* navbar transitions
+* search opening
+* search closing
+* button hover
+* image zoom
+* card lift
+* course selection
+* modal opening
+* modal closing
+* form validation
+* success check
+* scroll reveal
+* floating WhatsApp pulse
+* call button hover
+* menu animation
+
+Everything should have consistent easing.
+
+---
+
+# 61. CURSOR EFFECT — OPTIONAL
+
+On desktop only, you may add a VERY subtle custom cursor interaction.
+
+For example:
+
+Small blue glow following cursor.
+
+But:
+
+DO NOT add a giant circle cursor.
+
+DO NOT make cursor effects interfere with usability.
+
+Disable it on mobile.
+
+---
+
+# 62. SECTION TRANSITIONS
+
+Do not make sections look like separate unrelated boxes.
+
+Use watercolor transitions between sections.
+
+Example:
+
+White section
+
+↓
+
+soft blue watercolor wash
+
+↓
+
+white section
+
+↓
+
+blue watercolor brush
+
+↓
+
+white section
+
+This creates a continuous visual identity.
+
+---
+
+# 63. IMAGE TREATMENT
+
+Real photos should NOT simply be rectangular images.
+
+Use:
+
+* rounded corners
+* asymmetric masks
+* watercolor frame
+* soft shadows
+* slight border
+* overlapping cards
+
+Some images can extend outside their container slightly for editorial design.
+
+---
+
+# 64. COURSE GRID VISUAL VARIATION
+
+Do not make six identical cards.
+
+Keep the card system consistent, but vary:
+
+* image composition
+* decorative watercolor element
+* small accent
+* icon placement
+
+This makes the page feel custom designed.
+
+---
+
+# 65. APPLICATION CTA SECTION
+
+Near the end create a large CTA:
+
+# READY TO BUILD YOUR DIGITAL FUTURE?
+
+Text:
+
+**आज सही skill सीखना शुरू करें.**
+
+Buttons:
+
+**APPLY NOW**
+
+**EXPLORE COURSES**
+
+Use a beautiful watercolor blue background.
+
+Keep the actual content area white/light.
+
+---
+
+# 66. FINAL CONTACT CTA
+
+Create:
+
+# HAVE QUESTIONS?
+
+**Call us or connect with us on WhatsApp.**
+
+### 7742735762
+
+Buttons:
+
+**CALL NOW**
+
+**WHATSAPP**
+
+---
+
+# 67. DESIGN SYSTEM
+
+Create reusable CSS variables.
+
+For example:
+
+```css
+:root {
+  --white: #ffffff;
+  --blue: #2f80ed;
+  --sky-blue: #eaf6ff;
+  --deep-blue: #123b70;
+  --gold: #f5b400;
+  --text: #172033;
+  --muted: #667085;
+  --border: #dcecff;
+}
+```
+
+Do NOT use Tailwind CSS.
+
+Use clean modular CSS.
+
+---
+
+# 68. CODE ORGANIZATION
+
+Keep code maintainable.
+
+Suggested:
+
+```text
+/index.html
+
+/css/
+  style.css
+  responsive.css
+  animations.css
+
+/js/
+  main.js
+  navigation.js
+  search.js
+  courses.js
+  application.js
+
+/assets/
+  /images/
+  /icons/
+  /animations/
+  /logo/
+```
+
+You may adjust architecture if the project already has a different structure.
+
+Do not unnecessarily rewrite existing working backend functionality.
+
+---
+
+# 69. NO TAILWIND
+
+THIS IS NON-NEGOTIABLE.
+
+Do NOT use:
+
+* Tailwind
+* Tailwind CDN
+* generated Tailwind utility classes
+
+Use normal:
+
+**HTML + CSS + JavaScript**
+
+---
+
+# 70. DO NOT USE CHEAP COMPONENTS
+
+Avoid:
+
+* generic Bootstrap cards
+* default browser inputs
+* default alerts
+* generic hamburger
+* generic carousel
+* generic stock template sections
+
+Everything visible should be deliberately styled.
+
+---
+
+# 71. REAL IMAGE LICENSING
+
+If using external images:
+
+Use legitimate licensed/royalty-free sources.
+
+Prefer:
+
+* Unsplash
+* Pexels
+* properly licensed stock sources
+
+Do not hotlink random images from unknown websites.
+
+Prefer optimized local assets when possible.
+
+---
+
+# 72. IMAGE FALLBACK
+
+If external images fail:
+
+The layout must not break.
+
+Use proper aspect-ratio containers and fallback backgrounds.
+
+Do not allow broken image icons.
+
+---
+
+# 73. NO PHOTOGRAPHIC HERO CLICHÉS
+
+Avoid the typical:
+
+"smiling student looking at laptop"
+
+photo.
+
+Choose more sophisticated visuals:
+
+* creative workstation
+* camera/editing environment
+* professional digital setup
+* designer desk
+* modern learning environment
+
+The photography should look premium.
+
+---
+
+# 74. RESPONSIVE FORM MODAL
+
+Desktop:
+
+Two-column modal.
+
+Mobile:
+
+Single-column.
+
+The modal must:
+
+* fit screen
+* scroll internally if necessary
+* never cause page horizontal overflow
+* have clearly visible close button
+* keep submit button accessible
+
+---
+
+# 75. ACCESSIBILITY FOR MODALS
+
+When modal opens:
+
+* trap keyboard focus
+* ESC closes
+* focus close button appropriately
+* background interaction disabled
+* screen-reader labels
+
+---
+
+# 76. NAVBAR MOBILE
+
+Mobile navbar:
+
+Logo
+
+Search icon
+
+Menu icon
+
+When menu opens:
+
+Full/large clean mobile menu.
+
+Links:
+
+Home
+Courses
+About
+Learning
+Contact
+
+CTA:
+
+**Apply Now**
+
+Animate menu smoothly.
+
+---
+
+# 77. SCROLL TO SECTION
+
+All navbar links should smoothly scroll.
+
+If user clicks:
+
 Courses
 
-All six courses.
+scroll to Courses.
+
+If user clicks:
 
 Contact
-7424986155
-BADARI VIHAR KE SAMNE
-FIRST FLOOR, SIKAR
-Bottom
-© Squad Digital Classes. All Rights Reserved.
 
-Add Privacy Policy and Terms pages if required.
+scroll to Contact.
 
-38. Technical Requirements
+No broken anchors.
 
-Recommended stack:
+---
 
-React
-Vite / Next.js
-Tailwind CSS
-Framer Motion / Motion
-React Router
-React Hook Form
+# 78. ACTIVE NAVIGATION
 
-Use reusable components.
+While scrolling, highlight the current section in navbar.
 
-Example:
+Use a subtle blue underline or text color change.
 
-src/
- ├── components/
- │    ├── Header
- │    ├── Hero
- │    ├── CampaignBanner
- │    ├── CareerPanel
- │    ├── CourseCard
- │    ├── CourseGrid
- │    ├── Benefits
- │    ├── CompanyStrip
- │    ├── CTA
- │    ├── Contact
- │    ├── EnquiryForm
- │    └── Footer
- │
- ├── pages/
- │    ├── Home
- │    ├── Courses
- │    ├── About
- │    ├── Contact
- │    └── course/
- │
- ├── data/
- │    └── courses.js
- │
- ├── assets/
- │
- └── App.jsx
-39. Course Data Structure
+Do not overdo it.
 
-Keep courses in structured data rather than hard-coding everything repeatedly.
+---
+
+# 79. COURSE FILTER / SEARCH COMBINATION
+
+Search should work together with course display.
+
+If search finds no result:
+
+Show a clean empty state.
 
 Example:
 
-{
-  id: "digital-marketing",
-  number: 1,
-  title: "DIGITAL MARKETING",
-  duration: "2–3 MONTHS",
-  color: "blue",
-  topics: [
-    "SEO",
-    "Social Media",
-    "Google Ads",
-    "YouTube",
-    "Email",
-    "Content",
-    "More"
-  ]
-}
+**No course found**
 
-Do the same for all six courses.
+**Try another keyword.**
 
-40. Important Do-Not-Do Rules
-DO NOT:
-Add ₹7999
-Add 90% OFF
-Recreate the removed discount section
-Turn the entire poster into one image
-Use unreadably huge text everywhere
-Use excessive animations
-Add fake testimonials
-Add fake reviews
-Add fake student numbers
-Add fake placement statistics
-Claim guaranteed jobs
-Claim guaranteed Google/Meta/Amazon jobs
-Invent partnerships
-Use random stock imagery that doesn't match the visual style
-Make every section look identical
-Break mobile responsiveness
-41. Final Homepage Flow
+Do not leave an empty white area.
 
-The final homepage should follow this hierarchy:
+---
 
-HEADER
-↓
-HERO
-SQUAD DIGITAL CLASSES
-SKILL सीखें | CAREER बनाएं | FUTURE संवारें
-↓
-अब ALL COURSE पर
-↓
-AB NAYE JMANAE KE SATH NAYE MEDIA KO JAANE
-↓
-CAREER PANEL
-अब आपके CAREER की उड़ान की बाधा खत्म!
-↓
-LIMITED SEAT
-↓
-हमारे 6 पावरफुल कोर्स
-↓
-DIGITAL MARKETING
-GRAPHIC DESIGN
-VIDEO EDITING
-VIDEO SHOOTING
-PERSONALITY DEVELOPMENT
-ADVANCED TOOLS
-↓
-7 BENEFITS
-↓
-SUNAHARA MAUKA
-Google / Meta / Amazon / TATA / Infosys / Microsoft
-↓
-CALL NOW
-SUMIT JAIN
-7424986155
-↓
-ADDRESS
-BADARI VIHAR KE SAMNE
-FIRST FLOOR, SIKAR
-↓
-ENQUIRY FORM
-↓
-FOOTER
-42. Definition of Done
+# 80. FINAL QUALITY CHECK — MANDATORY
 
-The project is complete only when:
+After implementing the website, do NOT stop at the first working version.
 
- All poster information is included
- All 6 courses are included
- All course topics are included
- All durations are included
- All 7 benefits are included
- Career section exists
- Company/logo section exists
- SDC branding is correct
- Phone number is correct
- Sumit Jain is shown
- Sikar address is correct
- Call CTA works
- WhatsApp CTA works after number verification
- Enquiry form works
- Course detail pages work
- Mobile layout works
- Tablet layout works
- Desktop layout works
- Animations are smooth
- Reduced-motion support exists
- SEO is configured
- Images are optimized
- No horizontal overflow exists
- No ₹7999 appears
- No 90% OFF appears
- No unsupported/fake claims are added
- Website feels like a premium interactive version of the supplied SDC poster, not a static poster recreation.
+Perform a complete second/third refinement pass.
+
+Check visually:
+
+### HERO
+
+* Is it premium?
+* Is the hierarchy clear?
+* Are animations smooth?
+
+### NAVBAR
+
+* Does it hide while scrolling down?
+* Does it return while scrolling up?
+
+### SEARCH
+
+* Does icon open search?
+* Does filtering work?
+
+### COURSES
+
+* Are all six courses present?
+* Are images high quality?
+* Does multiple selection work?
+
+### APPLICATION
+
+* Does popup appear?
+* Does validation work?
+* Does success state work?
+
+### CONTACT
+
+* Is 7742735762 used everywhere?
+* WhatsApp opens correctly?
+* Call button opens correctly?
+
+### MOBILE
+
+* No horizontal scrolling?
+* Modal fits?
+* Cards fit?
+* Navbar works?
+
+### PERFORMANCE
+
+* No huge assets?
+* No unnecessary libraries?
+* No console errors?
+
+### VISUAL
+
+* White + watercolor blue?
+* No dark theme?
+* No cheap gradients?
+* No random AI faces?
+* No poster-like layout?
+
+---
+
+# 81. MOST IMPORTANT FINAL DESIGN TEST
+
+Before declaring the project complete, ask:
+
+> "If I removed the SDC logo, would this still look like a ₹80,000 professionally designed website?"
+
+If the answer is NO, improve the design.
+
+The website must have:
+
+**custom composition + premium typography + real imagery + sophisticated watercolor visuals + meaningful animation + polished UX.**
+
+---
+
+# 82. FINAL NON-NEGOTIABLE REQUIREMENTS
+
+### MUST HAVE
+
+✅ White + sky-blue + watercolor theme
+✅ Same SDC logo from supplied reference
+✅ Real professional photography where appropriate
+✅ Premium illustrations where photography isn't appropriate
+✅ Strong hero section
+✅ Real animations
+✅ Animated watercolor background
+✅ Scroll-based animations
+✅ Navbar hides on downward scroll
+✅ Navbar appears on upward scroll
+✅ Search icon only
+✅ Animated search overlay
+✅ Six courses
+✅ Multiple course selection
+✅ Course detail experience
+✅ Opening application popup
+✅ Name field
+✅ Mobile field
+✅ Multi-course selection
+✅ Real form validation
+✅ Proper success state
+✅ WhatsApp button LEFT SIDE
+✅ Call button LEFT SIDE
+✅ WhatsApp 7742735762
+✅ Call 7742735762
+✅ Location: Badari Vihar Ke Samne, First Floor, Sikar
+✅ Responsive mobile/tablet/desktop
+✅ SEO
+✅ Accessibility
+✅ Performance optimization
+✅ No Tailwind
+✅ No fake claims
+✅ No fake testimonials
+✅ No fake statistics
+✅ No console errors
+
+---
+
+# 83. FINAL INSTRUCTION
+
+Do NOT give me a basic implementation.
+
+Do NOT interpret this prompt loosely.
+
+Do NOT replace the requested visual direction with your own generic design.
+
+First understand the supplied reference image.
+
+Then build the website around the SDC identity.
+
+The final experience should feel like:
+
+**A premium Indian digital-skills academy with the visual quality of a modern technology startup website.**
+
+The most important visual combination is:
+
+# WHITE + WATERCOLOUR BLUE + REAL PREMIUM IMAGES + SOPHISTICATED ANIMATION + SDC BRANDING
+
+The most important functional combination is:
+
+# MULTI-COURSE APPLICATION + REAL VALIDATION + SEARCH + RESPONSIVE UX + WHATSAPP/CALL CONTACT
+
+And the most important quality requirement is:
+
+# DO NOT STOP AFTER MAKING IT FUNCTIONAL — POLISH IT UNTIL IT LOOKS EXPENSIVE.
