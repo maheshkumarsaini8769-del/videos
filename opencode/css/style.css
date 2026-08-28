@@ -274,21 +274,21 @@ ul { list-style: none; }
 .search-input-wrap {
   position: relative; margin-bottom: 28px;
 }
-.search-input-wrap svg { position: absolute; left: 18px; top: 50%; transform: translateY(-50%); }
+.search-input-wrap svg { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); pointer-events: none; }
 .search-input-wrap input {
-  width: 100%; padding: 18px 48px 18px 52px; font-size: 1.05rem; font-family: var(--font);
+  width: 100%; padding: 16px 48px 16px 48px; font-size: 1.05rem; font-family: var(--font);
   border: 2px solid var(--border); border-radius: var(--radius-lg); outline: none;
   transition: border-color 0.25s, box-shadow 0.25s;
 }
 .search-input-wrap input:focus { border-color: var(--blue); box-shadow: 0 0 0 4px rgba(47,128,237,0.1); }
 .search-input-wrap input::placeholder { color: #a0aec0; }
 .search-clear-btn {
-  position: absolute; right: 12px; top: 50%; transform: translateY(-50%);
-  width: 24px; height: 24px; border-radius: 50%; border: none; cursor: pointer;
-  background: #e2e8f0; color: #64748b; display: none; align-items: center; justify-content: center;
+  position: absolute; right: 8px; top: 50%; transform: translateY(-50%);
+  width: 32px; height: 32px; border-radius: 50%; border: none; cursor: pointer;
+  background: transparent; color: #94a3b8; display: none; align-items: center; justify-content: center;
   transition: all 0.2s;
 }
-.search-clear-btn:hover { background: #cbd5e1; color: #334155; }
+.search-clear-btn:hover { background: #f1f5f9; color: #475569; }
 .search-clear-btn.visible { display: flex; }
 .search-results { min-height: 80px; }
 .search-hint { color: var(--muted); font-size: 0.9rem; }
@@ -1451,7 +1451,8 @@ ul { list-style: none; }
   .search-overlay { padding-top: 60px; }
   .search-box { padding: 0 16px; }
   .search-top h2 { font-size: 1.3rem; }
-  .search-input-wrap input { padding: 14px 44px 14px 46px; font-size: 0.95rem; }
+  .search-input-wrap input { padding: 14px 44px 14px 44px; font-size: 0.95rem; }
+  .search-clear-btn { right: 4px; width: 36px; height: 36px; }
   
   /* Floating Buttons Mobile */
   .floating-btns { bottom: 20px; right: 16px; gap: 10px; }
