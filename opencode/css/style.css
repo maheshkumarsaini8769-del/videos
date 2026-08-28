@@ -1308,7 +1308,7 @@ ul { list-style: none; }
   
   /* Navbar Mobile */
   .nav-menu { display: none; }
-  .nav-right .btn-primary-sm { display: none; }
+  .nav-right .btn-primary-sm { display: inline-flex; padding: 8px 16px; font-size: 0.72rem; }
   .nav-right .nav-call-btn, .nav-right .nav-wa-btn { display: none; }
   .hamburger { display: flex; }
   .logo-name { font-size: 0.7rem; letter-spacing: 0.05em; }
