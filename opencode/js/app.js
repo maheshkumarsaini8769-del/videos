@@ -363,6 +363,7 @@
   });
   if (heroApply) heroApply.addEventListener('click', function() { openAppModal(); });
   document.querySelectorAll('.cta-apply-btn').forEach(function(b) { b.addEventListener('click', function() { openAppModal(); }); });
+  document.querySelectorAll('.mobile-apply-btn').forEach(function(b) { b.addEventListener('click', function() { openAppModal(); closeMobileMenu(); }); });
   document.querySelectorAll('.footer-apply-link').forEach(function(b) {
     b.addEventListener('click', function(e) { e.preventDefault(); openAppModal(); });
   });
