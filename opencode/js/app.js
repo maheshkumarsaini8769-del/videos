@@ -17,15 +17,22 @@
   setTimeout(hideLoader, 3000);
 
   // ========== BACK BUTTON - STAY ON SITE ==========
-  // Push multiple states so back button never leaves
-  for (var i = 0; i < 20; i++) { history.pushState(null, '', location.href); }
+  // Use hash to control navigation
+  location.hash = '#home';
+  window.addEventListener('hashchange', function(e) {
+    if (searchOverlay.classList.contains('open')) { closeSearch(); location.hash = '#home'; }
+    else if (courseModal.classList.contains('open')) { closeCourseModal(); location.hash = '#home'; }
+    else if (appModal.classList.contains('open')) { closeAppModal(); location.hash = '#home'; }
+    else if (mobileMenu.classList.contains('open')) { closeMobile(); location.hash = '#home'; }
+    else { location.hash = '#home'; }
+  });
   window.addEventListener('popstate', function(e) {
+    e.preventDefault();
     if (searchOverlay.classList.contains('open')) { closeSearch(); }
     else if (courseModal.classList.contains('open')) { closeCourseModal(); }
     else if (appModal.classList.contains('open')) { closeAppModal(); }
     else if (mobileMenu.classList.contains('open')) { closeMobile(); }
-    // Push states again to prevent leaving
-    for (var i = 0; i < 20; i++) { history.pushState(null, '', location.href); }
+    location.hash = '#home';
   });
 
   // ========== HERO ANIMATIONS ==========
