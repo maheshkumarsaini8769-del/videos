@@ -295,6 +295,13 @@ ul { list-style: none; }
   cursor: pointer; transition: background 0.2s;
 }
 .sr-item:hover { background: var(--sky); }
+.sr-thumb {
+  width: 56px; height: 56px; border-radius: 12px; overflow: hidden;
+  flex-shrink: 0; background: rgba(59,130,246,0.08);
+}
+.sr-thumb img {
+  width: 100%; height: 100%; object-fit: cover;
+}
 .sr-icon { width: 44px; height: 44px; background: rgba(47,128,237,0.08); border-radius: var(--radius); display: flex; align-items: center; justify-content: center; color: var(--blue); flex-shrink: 0; }
 .sr-info h4 { font-weight: 500; font-size: 0.95rem; }
 .sr-info p { font-size: 0.82rem; color: var(--muted); }
@@ -1409,11 +1416,14 @@ ul { list-style: none; }
   .success-heading { font-size: 1.3rem; }
   
   /* Course Modal Mobile */
-  .course-modal-box { border-radius: 20px; margin: 10px; max-height: 95vh; }
+  .course-modal-box { border-radius: 20px; margin: 10px; max-height: 90vh; overflow-y: auto; scrollbar-width: none; -ms-overflow-style: none; }
+  .course-modal-box::-webkit-scrollbar { display: none; }
+  .cm-hero { aspect-ratio: 16/10; }
+  .cm-hero img { width: 100%; height: 100%; object-fit: cover; }
   .cm-body { padding: 16px; }
   .cm-title { font-size: 1.3rem; }
   .cm-section h4 { font-size: 0.9rem; }
-  .cm-section p { font-size: 0.88rem; }
+  .cm-section p { font-size: 0.88rem; line-height: 1.6; }
   .cm-skill { font-size: 0.78rem; padding: 4px 12px; }
   
   /* Search Mobile */

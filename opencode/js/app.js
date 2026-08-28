@@ -170,7 +170,9 @@
     }
     var html = '';
     results.forEach(function(c) {
-      html += '<div class="sr-item" data-course="' + c.name + '"><div class="sr-icon">' + (courseIcons[c.name] || '') + '</div><div class="sr-info"><h4>' + c.name + '</h4><p>' + c.skills.slice(0, 4).join(', ') + ' • ' + c.duration + '</p></div></div>';
+      var courseData = courseDetails[c.name];
+      var imgSrc = courseData ? courseData.img : '';
+      html += '<div class="sr-item" data-course="' + c.name + '"><div class="sr-thumb"><img src="' + imgSrc + '" alt="' + c.name + '" loading="lazy"></div><div class="sr-info"><h4>' + c.name + '</h4><p>' + c.skills.slice(0, 4).join(', ') + ' • ' + c.duration + '</p></div></div>';
     });
     searchResults.innerHTML = html;
     searchResults.querySelectorAll('.sr-item').forEach(function(item) {
