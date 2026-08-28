@@ -197,7 +197,18 @@
   searchBtn.addEventListener('click', openSearch);
   searchClose.addEventListener('click', closeSearch);
   searchOverlay.addEventListener('click', function(e) { if (e.target === searchOverlay) closeSearch(); });
-  searchInput.addEventListener('input', function() { doSearch(this.value); });
+  searchInput.addEventListener('input', function() { doSearch(this.value); updateClearBtn(); });
+
+  var searchClearBtn = document.getElementById('searchClearBtn');
+  searchClearBtn.addEventListener('click', function() {
+    searchInput.value = '';
+    doSearch('');
+    updateClearBtn();
+    searchInput.focus();
+  });
+  function updateClearBtn() {
+    searchClearBtn.classList.toggle('visible', searchInput.value.length > 0);
+  }
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') { closeSearch(); closeCourseModal(); closeAppModal(); closeMobile(); }
     if ((e.ctrlKey || e.metaKey) && e.key === 'k') { e.preventDefault(); searchOverlay.classList.contains('open') ? closeSearch() : openSearch(); }

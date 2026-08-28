@@ -282,6 +282,14 @@ ul { list-style: none; }
 }
 .search-input-wrap input:focus { border-color: var(--blue); box-shadow: 0 0 0 4px rgba(47,128,237,0.1); }
 .search-input-wrap input::placeholder { color: #a0aec0; }
+.search-clear-btn {
+  position: absolute; right: 12px; top: 50%; transform: translateY(-50%);
+  width: 24px; height: 24px; border-radius: 50%; border: none; cursor: pointer;
+  background: #e2e8f0; color: #64748b; display: none; align-items: center; justify-content: center;
+  transition: all 0.2s;
+}
+.search-clear-btn:hover { background: #cbd5e1; color: #334155; }
+.search-clear-btn.visible { display: flex; }
 .search-results { min-height: 80px; }
 .search-hint { color: var(--muted); font-size: 0.9rem; }
 .search-tag {
