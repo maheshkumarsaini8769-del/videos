@@ -16,13 +16,16 @@
   window.addEventListener('load', function() { setTimeout(hideLoader, 800); });
   setTimeout(hideLoader, 3000);
 
-  // ========== BACK BUTTON - CLOSE MODALS ==========
-  history.replaceState({ page: 'home' }, '');
+  // ========== BACK BUTTON - STAY ON SITE ==========
+  // Push multiple states so back button never leaves
+  for (var i = 0; i < 20; i++) { history.pushState(null, '', location.href); }
   window.addEventListener('popstate', function(e) {
-    if (searchOverlay.classList.contains('open')) { closeSearch(); history.replaceState({ page: 'home' }, ''); }
-    else if (courseModal.classList.contains('open')) { closeCourseModal(); history.replaceState({ page: 'home' }, ''); }
-    else if (appModal.classList.contains('open')) { closeAppModal(); history.replaceState({ page: 'home' }, ''); }
-    else if (mobileMenu.classList.contains('open')) { closeMobile(); history.replaceState({ page: 'home' }, ''); }
+    if (searchOverlay.classList.contains('open')) { closeSearch(); }
+    else if (courseModal.classList.contains('open')) { closeCourseModal(); }
+    else if (appModal.classList.contains('open')) { closeAppModal(); }
+    else if (mobileMenu.classList.contains('open')) { closeMobile(); }
+    // Push states again to prevent leaving
+    for (var i = 0; i < 20; i++) { history.pushState(null, '', location.href); }
   });
 
   // ========== HERO ANIMATIONS ==========
