@@ -16,10 +16,12 @@
   window.addEventListener('load', function() { setTimeout(hideLoader, 800); });
   setTimeout(hideLoader, 3000);
 
-  // ========== BACK BUTTON - STAY ON SITE ==========
-  history.pushState(null, '', location.href);
+  // ========== BACK BUTTON - CLOSE MODALS ==========
   window.addEventListener('popstate', function() {
-    history.pushState(null, '', location.href);
+    if (searchOverlay.classList.contains('open')) { closeSearch(); }
+    else if (courseModal.classList.contains('open')) { closeCourseModal(); }
+    else if (appModal.classList.contains('open')) { closeAppModal(); }
+    else if (mobileMenu.classList.contains('open')) { closeMobile(); }
   });
 
   // ========== HERO ANIMATIONS ==========
@@ -90,6 +92,7 @@
     mobileMenu.classList.add('open');
     hamburger.classList.add('open');
     document.body.classList.add('no-scroll');
+    history.pushState({ modal: 'mobile' }, '');
   });
 
   function closeMobile() {
@@ -147,6 +150,7 @@
   function openSearch() {
     searchOverlay.classList.add('open');
     document.body.classList.add('no-scroll');
+    history.pushState({ modal: 'search' }, '');
     setTimeout(function() { searchInput.focus(); }, 300);
     renderDefaultSearch();
   }
@@ -239,6 +243,7 @@
     });
     courseModal.classList.add('open');
     document.body.classList.add('no-scroll');
+    history.pushState({ modal: 'course' }, '');
     setTimeout(function() { cmClose.focus(); }, 100);
   }
   function closeCourseModal() {
@@ -279,6 +284,7 @@
   function openAppModal(preCourse) {
     appModal.classList.add('open');
     document.body.classList.add('no-scroll');
+    history.pushState({ modal: 'app' }, '');
     resetAppForm();
     if (preCourse) selectChip(preCourse);
     setTimeout(function() { appName.focus(); }, 400);
