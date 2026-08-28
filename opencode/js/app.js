@@ -17,22 +17,30 @@
   setTimeout(hideLoader, 3000);
 
   // ========== BACK BUTTON - STAY ON SITE ==========
-  // Use hash to control navigation
-  location.hash = '#home';
-  window.addEventListener('hashchange', function(e) {
-    if (searchOverlay.classList.contains('open')) { closeSearch(); location.hash = '#home'; }
-    else if (courseModal.classList.contains('open')) { closeCourseModal(); location.hash = '#home'; }
-    else if (appModal.classList.contains('open')) { closeAppModal(); location.hash = '#home'; }
-    else if (mobileMenu.classList.contains('open')) { closeMobile(); location.hash = '#home'; }
-    else { location.hash = '#home'; }
-  });
+  // Push initial state
+  history.pushState(null, '', location.href);
+  history.pushState(null, '', location.href);
+  
   window.addEventListener('popstate', function(e) {
+    e.stopImmediatePropagation();
     e.preventDefault();
+    
+    // Close any open modal/menu first
     if (searchOverlay.classList.contains('open')) { closeSearch(); }
     else if (courseModal.classList.contains('open')) { closeCourseModal(); }
     else if (appModal.classList.contains('open')) { closeAppModal(); }
     else if (mobileMenu.classList.contains('open')) { closeMobile(); }
-    location.hash = '#home';
+    
+    // Always push state back to prevent leaving
+    setTimeout(function() {
+      history.pushState(null, '', location.href);
+    }, 10);
+  }, true);
+  
+  // Backup: beforeunload warning
+  window.addEventListener('beforeunload', function(e) {
+    e.preventDefault();
+    e.returnValue = '';
   });
 
   // ========== HERO ANIMATIONS ==========
