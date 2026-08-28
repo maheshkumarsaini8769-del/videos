@@ -1371,6 +1371,11 @@ ul { list-style: none; }
   /* Editorial Mobile */
   .editorial-img-wrap { max-width: 350px; margin: 0 auto; }
   
+  /* About Mobile */
+  .about-img-wrap { max-width: 100%; overflow: hidden; }
+  .about-img { width: 100%; height: auto; }
+  .about-img-border { inset: -6px; }
+  
   /* Contact Mobile */
   .contact-cards { grid-template-columns: 1fr; gap: 16px; }
   .c-card:last-child { grid-column: auto; max-width: none; }
