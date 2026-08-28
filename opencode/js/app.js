@@ -23,7 +23,6 @@
     else if (courseModal.classList.contains('open')) { closeCourseModal(); history.replaceState({ page: 'home' }, ''); }
     else if (appModal.classList.contains('open')) { closeAppModal(); history.replaceState({ page: 'home' }, ''); }
     else if (mobileMenu.classList.contains('open')) { closeMobile(); history.replaceState({ page: 'home' }, ''); }
-    else { history.back(); }
   });
 
   // ========== HERO ANIMATIONS ==========
