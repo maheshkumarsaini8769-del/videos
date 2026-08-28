@@ -16,6 +16,12 @@
   window.addEventListener('load', function() { setTimeout(hideLoader, 800); });
   setTimeout(hideLoader, 3000);
 
+  // ========== BACK BUTTON - STAY ON SITE ==========
+  history.pushState(null, '', location.href);
+  window.addEventListener('popstate', function() {
+    history.pushState(null, '', location.href);
+  });
+
   // ========== HERO ANIMATIONS ==========
   function showHeroAnim() {
     document.querySelectorAll('.hero .anim-item').forEach(function(el) {
