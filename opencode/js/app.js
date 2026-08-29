@@ -422,21 +422,31 @@
   }, 2000);
 
   // ========== REVIEWS SYSTEM ==========
+  var API_URL = '/api/reviews';
   var defaultReviews = [
     { name: 'Priya Sharma', course: 'Graphic Design', rating: 5, text: 'SDC ne meri life change kar di! Graphic design seekh ke ab main freelance kar rahi hoon aur monthly 25K+ kama rahi hoon. Faculty bahut supportive hai.' },
     { name: 'Rahul Kumar', course: 'Video Editing', rating: 5, text: 'Video editing course zabardast tha! Premiere Pro aur After Effects dono seekhe. Ab YouTube channels ke liye edit kar raha hoon. Practical training bahut achi thi.' },
     { name: 'Anjali Meena', course: 'Digital Marketing', rating: 4, text: 'Digital marketing course se mujhe SEO aur social media marketing samajh aayi. Ab apna khud ka business badha rahi hoon. SDC best hai Sikar mein!' }
   ];
 
-  function getReviews() {
-    var stored = localStorage.getItem('sdc_reviews');
-    if (stored) return JSON.parse(stored);
-    localStorage.setItem('sdc_reviews', JSON.stringify(defaultReviews));
+  async function getReviews() {
+    try {
+      var res = await fetch(API_URL);
+      if (res.ok) return await res.json();
+    } catch(e) {}
     return defaultReviews;
   }
 
-  function saveReviews(reviews) {
-    localStorage.setItem('sdc_reviews', JSON.stringify(reviews));
+  async function saveReview(review) {
+    try {
+      var res = await fetch(API_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(review)
+      });
+      if (res.ok) return await res.json();
+    } catch(e) {}
+    return null;
   }
 
   function renderStars(rating) {
@@ -447,8 +457,8 @@
     return stars;
   }
 
-  function renderTopReviews() {
-    var reviews = getReviews();
+  async function renderTopReviews() {
+    var reviews = await getReviews();
     var top3 = reviews.slice(-3).reverse();
     var grid = document.getElementById('reviewsGrid');
     if (!grid) return;
@@ -460,8 +470,8 @@
     initScrollReveal();
   }
 
-  function renderAllReviews() {
-    var reviews = getReviews();
+  async function renderAllReviews() {
+    var reviews = await getReviews();
     var list = document.getElementById('allReviewsList');
     if (!list) return;
     if (reviews.length === 0) {
@@ -533,7 +543,7 @@
 
   // Submit review
   if (reviewForm) {
-    reviewForm.addEventListener('submit', function(e) {
+    reviewForm.addEventListener('submit', async function(e) {
       e.preventDefault();
       if (selectedRating === 0) { alert('Please select a rating'); return; }
       var review = {
@@ -542,9 +552,7 @@
         rating: selectedRating,
         text: document.getElementById('reviewText').value
       };
-      var reviews = getReviews();
-      reviews.push(review);
-      saveReviews(reviews);
+      await saveReview(review);
       reviewForm.style.display = 'none';
       reviewSuccess.style.display = 'block';
       renderTopReviews();
