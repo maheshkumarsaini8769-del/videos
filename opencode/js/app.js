@@ -30,6 +30,8 @@
     else if (courseModal.classList.contains('open')) { closeCourseModal(); }
     else if (appModal.classList.contains('open')) { closeAppModal(); }
     else if (mobileMenu.classList.contains('open')) { closeMobile(); }
+    else if (reviewModal && reviewModal.classList.contains('open')) { closeReviewModal(); }
+    else if (allReviewsModal && allReviewsModal.classList.contains('open')) { closeAllReviews(); }
     
     // Always push state back to prevent leaving
     setTimeout(function() {
@@ -418,6 +420,162 @@
   setTimeout(function() {
     openAppModal();
   }, 2000);
+
+  // ========== REVIEWS SYSTEM ==========
+  var defaultReviews = [
+    { name: 'Priya Sharma', course: 'Graphic Design', rating: 5, text: 'SDC ne meri life change kar di! Graphic design seekh ke ab main freelance kar rahi hoon aur monthly 25K+ kama rahi hoon. Faculty bahut supportive hai.' },
+    { name: 'Rahul Kumar', course: 'Video Editing', rating: 5, text: 'Video editing course zabardast tha! Premiere Pro aur After Effects dono seekhe. Ab YouTube channels ke liye edit kar raha hoon. Practical training bahut achi thi.' },
+    { name: 'Anjali Meena', course: 'Digital Marketing', rating: 4, text: 'Digital marketing course se mujhe SEO aur social media marketing samajh aayi. Ab apna khud ka business badha rahi hoon. SDC best hai Sikar mein!' }
+  ];
+
+  function getReviews() {
+    var stored = localStorage.getItem('sdc_reviews');
+    if (stored) return JSON.parse(stored);
+    localStorage.setItem('sdc_reviews', JSON.stringify(defaultReviews));
+    return defaultReviews;
+  }
+
+  function saveReviews(reviews) {
+    localStorage.setItem('sdc_reviews', JSON.stringify(reviews));
+  }
+
+  function renderStars(rating) {
+    var stars = '';
+    for (var i = 1; i <= 5; i++) {
+      stars += i <= rating ? '&#9733;' : '&#9734;';
+    }
+    return stars;
+  }
+
+  function renderTopReviews() {
+    var reviews = getReviews();
+    var top3 = reviews.slice(-3).reverse();
+    var grid = document.getElementById('reviewsGrid');
+    if (!grid) return;
+    grid.innerHTML = '';
+    top3.forEach(function(r) {
+      var initials = r.name.split(' ').map(function(w) { return w[0]; }).join('').toUpperCase();
+      grid.innerHTML += '<div class="review-card anim-scroll"><div class="review-stars">' + renderStars(r.rating) + '</div><p class="review-text">"' + r.text + '"</p><div class="review-author"><div class="review-avatar">' + initials + '</div><div><div class="review-name">' + r.name + '</div><div class="review-course">' + r.course + '</div></div></div></div>';
+    });
+    initScrollReveal();
+  }
+
+  function renderAllReviews() {
+    var reviews = getReviews();
+    var list = document.getElementById('allReviewsList');
+    if (!list) return;
+    if (reviews.length === 0) {
+      list.innerHTML = '<div class="all-reviews-empty"><p>No reviews yet. Be the first to write one!</p></div>';
+      return;
+    }
+    list.innerHTML = '';
+    reviews.slice().reverse().forEach(function(r) {
+      var initials = r.name.split(' ').map(function(w) { return w[0]; }).join('').toUpperCase();
+      list.innerHTML += '<div class="all-review-item"><div class="all-review-top"><div class="all-review-author"><div class="all-review-avatar">' + initials + '</div><div><div class="all-review-name">' + r.name + '</div><div class="all-review-course">' + r.course + '</div></div></div><div class="all-review-stars">' + renderStars(r.rating) + '</div></div><p class="all-review-text">"' + r.text + '"</p></div>';
+    });
+  }
+
+  // Review Modal
+  var reviewModal = document.getElementById('reviewModal');
+  var reviewBackdrop = document.getElementById('reviewBackdrop');
+  var reviewClose = document.getElementById('reviewClose');
+  var writeReviewBtn = document.getElementById('writeReviewBtn');
+  var reviewForm = document.getElementById('reviewForm');
+  var reviewSuccess = document.getElementById('reviewSuccess');
+  var reviewDoneBtn = document.getElementById('reviewDoneBtn');
+  var starRating = document.getElementById('starRating');
+  var selectedRating = 0;
+
+  function openReviewModal() {
+    reviewModal.classList.add('open');
+    document.body.classList.add('no-scroll');
+    reviewForm.style.display = 'block';
+    reviewSuccess.style.display = 'none';
+    reviewForm.reset();
+    selectedRating = 0;
+    updateStars();
+    history.pushState({ modal: 'review' }, '');
+  }
+
+  function closeReviewModal() {
+    reviewModal.classList.remove('open');
+    document.body.classList.remove('no-scroll');
+  }
+
+  if (writeReviewBtn) writeReviewBtn.addEventListener('click', openReviewModal);
+  if (reviewClose) reviewClose.addEventListener('click', closeReviewModal);
+  if (reviewBackdrop) reviewBackdrop.addEventListener('click', closeReviewModal);
+
+  // Star rating
+  var stars = starRating ? starRating.querySelectorAll('.star') : [];
+  stars.forEach(function(star) {
+    star.addEventListener('click', function() {
+      selectedRating = parseInt(this.getAttribute('data-rating'));
+      updateStars();
+    });
+    star.addEventListener('mouseenter', function() {
+      var hoverRating = parseInt(this.getAttribute('data-rating'));
+      stars.forEach(function(s) {
+        s.classList.toggle('active', parseInt(s.getAttribute('data-rating')) <= hoverRating);
+      });
+    });
+  });
+
+  if (starRating) {
+    starRating.addEventListener('mouseleave', function() { updateStars(); });
+  }
+
+  function updateStars() {
+    stars.forEach(function(s) {
+      s.classList.toggle('active', parseInt(s.getAttribute('data-rating')) <= selectedRating);
+    });
+  }
+
+  // Submit review
+  if (reviewForm) {
+    reviewForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      if (selectedRating === 0) { alert('Please select a rating'); return; }
+      var review = {
+        name: document.getElementById('reviewName').value,
+        course: document.getElementById('reviewCourse').value,
+        rating: selectedRating,
+        text: document.getElementById('reviewText').value
+      };
+      var reviews = getReviews();
+      reviews.push(review);
+      saveReviews(reviews);
+      reviewForm.style.display = 'none';
+      reviewSuccess.style.display = 'block';
+      renderTopReviews();
+    });
+  }
+
+  if (reviewDoneBtn) reviewDoneBtn.addEventListener('click', closeReviewModal);
+
+  // All Reviews Modal
+  var allReviewsModal = document.getElementById('allReviewsModal');
+  var allReviewsBackdrop = document.getElementById('allReviewsBackdrop');
+  var allReviewsClose = document.getElementById('allReviewsClose');
+  var checkAllReviews = document.getElementById('checkAllReviews');
+
+  function openAllReviews() {
+    renderAllReviews();
+    allReviewsModal.classList.add('open');
+    document.body.classList.add('no-scroll');
+    history.pushState({ modal: 'allReviews' }, '');
+  }
+
+  function closeAllReviews() {
+    allReviewsModal.classList.remove('open');
+    document.body.classList.remove('no-scroll');
+  }
+
+  if (checkAllReviews) checkAllReviews.addEventListener('click', openAllReviews);
+  if (allReviewsClose) allReviewsClose.addEventListener('click', closeAllReviews);
+  if (allReviewsBackdrop) allReviewsBackdrop.addEventListener('click', closeAllReviews);
+
+  renderTopReviews();
 
   // ========== INIT ==========
   initScrollReveal();
