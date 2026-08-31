@@ -857,7 +857,7 @@ ul { list-style: none; }
 .cm-tab {
   flex: 1; padding: 12px 16px; border: none; border-radius: var(--radius); cursor: pointer;
   font-weight: 600; font-size: 0.85rem; font-family: var(--font); transition: all 0.3s;
-  background: transparent; color: var(--text2);
+  background: transparent; color: var(--text2); text-align: center;
 }
 .cm-tab.active { background: var(--blue); color: var(--white); box-shadow: 0 2px 8px rgba(59,130,246,0.3); }
 .cm-tab:hover:not(.active) { background: rgba(59,130,246,0.1); }
