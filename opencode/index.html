@@ -115,7 +115,7 @@
               <h2>START YOUR<br>DIGITAL CAREER</h2>
               <p>Apne liye suitable course select karein aur SDC ke saath apni learning journey start karein.</p>
               <div class="app-visual-courses">
-                <span>6 Courses Available</span>
+                <span>8 Courses Available</span>
                 <span>2-3 Months Duration</span>
                 <span>100% Practical</span>
               </div>
@@ -138,14 +138,6 @@
             <div class="form-field">
               <label>Select Course(s) <span class="label-hint">- You can select multiple</span></label>
               <div class="chips-grid" id="chipsGrid">
-                <button type="button" class="chip" data-course="Digital Marketing">
-                  <svg class="chip-tick" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                  Digital Marketing
-                </button>
-                <button type="button" class="chip" data-course="Graphic Design">
-                  <svg class="chip-tick" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                  Graphic Design
-                </button>
                 <button type="button" class="chip" data-course="Video Editing">
                   <svg class="chip-tick" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
                   Video Editing
@@ -154,13 +146,29 @@
                   <svg class="chip-tick" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
                   Video Shooting
                 </button>
+                <button type="button" class="chip" data-course="Digital Marketing">
+                  <svg class="chip-tick" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                  Digital Marketing
+                </button>
+                <button type="button" class="chip" data-course="Content Creation">
+                  <svg class="chip-tick" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                  Content Creation
+                </button>
+                <button type="button" class="chip" data-course="Content Editing">
+                  <svg class="chip-tick" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                  Content Editing
+                </button>
+                <button type="button" class="chip" data-course="Graphic Design">
+                  <svg class="chip-tick" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                  Graphic Design
+                </button>
+                <button type="button" class="chip" data-course="Modeling Skill">
+                  <svg class="chip-tick" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                  Modeling Skill
+                </button>
                 <button type="button" class="chip" data-course="Personality Development">
                   <svg class="chip-tick" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
                   Personality Development
-                </button>
-                <button type="button" class="chip" data-course="Advanced Tools">
-                  <svg class="chip-tick" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                  Advanced Tools
                 </button>
               </div>
               <span class="field-error" id="courseErr"></span>
@@ -211,23 +219,43 @@
           <h4>Overview</h4>
           <p id="cmOverview"></p>
         </div>
-        <div class="cm-section">
-          <h4>What You'll Learn</h4>
-          <div class="cm-skills" id="cmSkills"></div>
+        
+        <div class="cm-tabs">
+          <button class="cm-tab active" data-tab="basic" onclick="showCourseTab('basic')">BASIC COURSE</button>
+          <button class="cm-tab" data-tab="advanced" onclick="showCourseTab('advanced')">ADVANCE COURSE</button>
         </div>
-        <div class="cm-section">
-          <h4>Duration</h4>
-          <p class="cm-duration">2-3 MONTHS</p>
+        
+        <div class="cm-course-content">
+          <div class="cm-section">
+            <h4 id="cmSectionTitle">BASIC COURSE</h4>
+            <p class="cm-duration" id="cmDuration"></p>
+          </div>
+          <div class="cm-section">
+            <h4>Topics Covered</h4>
+            <div class="cm-topics" id="cmTopics"></div>
+          </div>
         </div>
+        
         <div class="cm-section">
           <h4>Tools Covered</h4>
           <p id="cmTools"></p>
         </div>
+        
         <div class="cm-section">
-          <h4>Career Opportunities</h4>
-          <p id="cmCareer"></p>
+          <h4>Student Benefits</h4>
+          <div class="cm-benefits">
+            <div class="cm-benefit"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Practical Training</div>
+            <div class="cm-benefit"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Real Client Projects</div>
+            <div class="cm-benefit"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Portfolio Development</div>
+            <div class="cm-benefit"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Certificate of Completion</div>
+            <div class="cm-benefit"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Live Interview Preparation</div>
+          </div>
         </div>
-        <button class="btn-primary-full" id="cmApplyBtn">APPLY FOR THIS COURSE</button>
+        
+        <div class="cm-cta">
+          <button class="btn-primary-full" id="cmApplyBtn">APPLY FOR THIS COURSE</button>
+          <a href="https://wa.me/917742735762?text=Hello%20SDC%2C%20mujhe%20course%20details%20chahiye." target="_blank" class="btn-outline-full">GET COURSE DETAILS</a>
+        </div>
       </div>
     </div>
   </div>
@@ -256,8 +284,12 @@
             <option>Graphic Design</option>
             <option>Video Editing</option>
             <option>Video Shooting</option>
+            <option>Digital Marketing</option>
+            <option>Content Creation</option>
+            <option>Content Editing</option>
+            <option>Graphic Design</option>
+            <option>Modeling Skill</option>
             <option>Personality Development</option>
-            <option>Advanced Tools</option>
           </select>
         </div>
         <div class="review-field">
@@ -398,7 +430,7 @@
           <p class="section-desc anim-scroll">Our approach combines hands-on training with real-world projects, ensuring you build skills that matter in today's digital industry.</p>
           <div class="about-stats anim-scroll">
             <div class="stat-box">
-              <span class="stat-num">6+</span>
+              <span class="stat-num">8</span>
               <span class="stat-label">Courses</span>
             </div>
             <div class="stat-box">
@@ -477,129 +509,203 @@
   <!-- ========== COURSES ========== -->
   <section id="courses" class="section courses-section">
     <div class="container">
-      <h2 class="section-heading center anim-scroll">LEARN SKILLS <span class="blue">THAT MATTER</span></h2>
-      <p class="section-sub center anim-scroll">Practical digital courses designed for today's career opportunities.</p>
+      <div class="courses-header">
+        <div>
+          <span class="badge anim-scroll">8 CAREER-FOCUSED COURSES</span>
+          <h2 class="section-heading anim-scroll">EXPLORE OUR <span class="blue">COURSES</span></h2>
+          <p class="section-sub anim-scroll">Practical digital skills, creative skills and professional development designed for today's opportunities.</p>
+        </div>
+      </div>
+
+      <div class="course-filters anim-scroll">
+        <button class="filter-btn active" data-filter="all">All Courses</button>
+        <button class="filter-btn" data-filter="video">Video</button>
+        <button class="filter-btn" data-filter="marketing">Marketing</button>
+        <button class="filter-btn" data-filter="content">Content</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+        <button class="filter-btn" data-filter="modeling">Modeling</button>
+        <button class="filter-btn" data-filter="personality">Personality</button>
+      </div>
 
       <div class="courses-grid" id="coursesGrid">
         <!-- Course 1 -->
-        <article class="course-card anim-scroll" data-course="Digital Marketing">
+        <article class="course-card anim-scroll" data-course="Video Editing" data-category="video">
           <div class="cc-img-wrap">
-            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&q=80" alt="Digital Marketing" class="cc-img" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=600&h=400&fit=crop&q=80" alt="Video Editing" class="cc-img" loading="lazy">
             <div class="cc-num">01</div>
           </div>
           <div class="cc-body">
-            <h3 class="cc-title">DIGITAL MARKETING</h3>
-            <p class="cc-desc">Master SEO, social media, Google Ads, YouTube marketing and content strategies.</p>
+            <h3 class="cc-title">VIDEO EDITING</h3>
+            <p class="cc-desc">From mobile editing to professional Premiere Pro. Master video editing at every level.</p>
             <div class="cc-tags">
-              <span>SEO</span><span>Social Media</span><span>Google Ads</span><span>YouTube</span><span>Email Marketing</span>
+              <span>VN Editor</span><span>CapCut</span><span>Premiere Pro</span><span>After Effects</span>
+            </div>
+            <div class="cc-durations">
+              <span class="cc-basic">Basic: 2-3 Months</span>
+              <span class="cc-advanced">Advanced: 4-6 Months</span>
             </div>
             <div class="cc-bottom">
-              <span class="cc-duration"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 2-3 MONTHS</span>
-              <button class="cc-explore" data-course="Digital Marketing">EXPLORE <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
+              <button class="cc-explore" data-course="Video Editing">EXPLORE COURSE <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Course 2 -->
-        <article class="course-card anim-scroll" data-course="Graphic Design">
+        <article class="course-card anim-scroll" data-course="Video Shooting" data-category="video">
           <div class="cc-img-wrap">
-            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=400&fit=crop&q=80" alt="Graphic Design" class="cc-img" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=600&h=400&fit=crop&q=80" alt="Video Shooting" class="cc-img" loading="lazy">
             <div class="cc-num">02</div>
           </div>
           <div class="cc-body">
-            <h3 class="cc-title">GRAPHIC DESIGN</h3>
-            <p class="cc-desc">Create stunning visuals, logos, banners and brand identities.</p>
+            <h3 class="cc-title">VIDEO SHOOTING</h3>
+            <p class="cc-desc">Master camera techniques, lighting, and cinematic production from basics to professional.</p>
             <div class="cc-tags">
-              <span>Photoshop</span><span>Illustrator</span><span>Canva</span><span>Logo</span><span>Branding</span>
+              <span>Camera Basics</span><span>Lighting</span><span>Gimbal</span><span>Cinematic</span>
+            </div>
+            <div class="cc-durations">
+              <span class="cc-basic">Basic: 2-3 Months</span>
+              <span class="cc-advanced">Advanced: 4-6 Months</span>
             </div>
             <div class="cc-bottom">
-              <span class="cc-duration"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 2-3 MONTHS</span>
-              <button class="cc-explore" data-course="Graphic Design">EXPLORE <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
+              <button class="cc-explore" data-course="Video Shooting">EXPLORE COURSE <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Course 3 -->
-        <article class="course-card anim-scroll" data-course="Video Editing">
+        <article class="course-card anim-scroll" data-course="Digital Marketing" data-category="marketing">
           <div class="cc-img-wrap">
-            <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=600&h=400&fit=crop&q=80" alt="Video Editing" class="cc-img" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&q=80" alt="Digital Marketing" class="cc-img" loading="lazy">
             <div class="cc-num">03</div>
           </div>
           <div class="cc-body">
-            <h3 class="cc-title">VIDEO EDITING</h3>
-            <p class="cc-desc">Learn professional editing from raw footage to polished products.</p>
+            <h3 class="cc-title">DIGITAL MARKETING</h3>
+            <p class="cc-desc">Build brands, generate leads and grow businesses with SEO, social media and ads.</p>
             <div class="cc-tags">
-              <span>Premiere Pro</span><span>After Effects</span><span>Color Grading</span><span>Reels</span><span>YouTube</span>
+              <span>SEO</span><span>Social Media</span><span>Meta Ads</span><span>Google</span>
+            </div>
+            <div class="cc-durations">
+              <span class="cc-basic">Basic: 3 Months</span>
+              <span class="cc-advanced">Advanced: 6 Months</span>
             </div>
             <div class="cc-bottom">
-              <span class="cc-duration"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 2-3 MONTHS</span>
-              <button class="cc-explore" data-course="Video Editing">EXPLORE <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
+              <button class="cc-explore" data-course="Digital Marketing">EXPLORE COURSE <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Course 4 -->
-        <article class="course-card anim-scroll" data-course="Video Shooting">
+        <article class="course-card anim-scroll" data-course="Content Creation" data-category="content">
           <div class="cc-img-wrap">
-            <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=600&h=400&fit=crop&q=80" alt="Video Shooting" class="cc-img" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=600&h=400&fit=crop&q=80" alt="Content Creation" class="cc-img" loading="lazy">
             <div class="cc-num">04</div>
           </div>
           <div class="cc-body">
-            <h3 class="cc-title">VIDEO SHOOTING</h3>
-            <p class="cc-desc">Master camera techniques, lighting, composition and storytelling.</p>
+            <h3 class="cc-title">CONTENT CREATION</h3>
+            <p class="cc-desc">Create engaging content for social media, YouTube and brands with scripting and planning.</p>
             <div class="cc-tags">
-              <span>Camera Basics</span><span>Lighting</span><span>Composition</span><span>Storytelling</span><span>Practical</span>
+              <span>Script Writing</span><span>Reels</span><span>Personal Branding</span><span>YouTube</span>
+            </div>
+            <div class="cc-durations">
+              <span class="cc-basic">Basic: 2-3 Months</span>
+              <span class="cc-advanced">Advanced: 4-6 Months</span>
             </div>
             <div class="cc-bottom">
-              <span class="cc-duration"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 2-3 MONTHS</span>
-              <button class="cc-explore" data-course="Video Shooting">EXPLORE <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
+              <button class="cc-explore" data-course="Content Creation">EXPLORE COURSE <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Course 5 -->
-        <article class="course-card anim-scroll" data-course="Personality Development">
+        <article class="course-card anim-scroll" data-course="Content Editing" data-category="content">
           <div class="cc-img-wrap">
-            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop&q=80" alt="Personality Development" class="cc-img" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=600&h=400&fit=crop&q=80" alt="Content Editing" class="cc-img" loading="lazy">
             <div class="cc-num">05</div>
           </div>
           <div class="cc-body">
-            <h3 class="cc-title">PERSONALITY DEVELOPMENT</h3>
-            <p class="cc-desc">Build confidence, communication and professional skills.</p>
+            <h3 class="cc-title">CONTENT EDITING</h3>
+            <p class="cc-desc">Specialize in reels editing, motion graphics and creative content for brands.</p>
             <div class="cc-tags">
-              <span>Communication</span><span>Confidence</span><span>Public Speaking</span><span>Interview</span><span>Time Mgmt</span>
+              <span>Reels Editing</span><span>Motion Graphics</span><span>Brand Videos</span><span>Creative</span>
+            </div>
+            <div class="cc-durations">
+              <span class="cc-basic">Basic: 2-3 Months</span>
+              <span class="cc-advanced">Advanced: 4-6 Months</span>
             </div>
             <div class="cc-bottom">
-              <span class="cc-duration"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 2-3 MONTHS</span>
-              <button class="cc-explore" data-course="Personality Development">EXPLORE <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
+              <button class="cc-explore" data-course="Content Editing">EXPLORE COURSE <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Course 6 -->
-        <article class="course-card anim-scroll" data-course="Advanced Tools">
+        <article class="course-card anim-scroll" data-course="Graphic Design" data-category="design">
           <div class="cc-img-wrap">
-            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop&q=80" alt="Advanced Tools" class="cc-img" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=400&fit=crop&q=80" alt="Graphic Design" class="cc-img" loading="lazy">
             <div class="cc-num">06</div>
           </div>
           <div class="cc-body">
-            <h3 class="cc-title">ADVANCED TOOLS</h3>
-            <p class="cc-desc">Harness AI and modern tools for maximum productivity.</p>
+            <h3 class="cc-title">GRAPHIC DESIGN</h3>
+            <p class="cc-desc">Create stunning visuals, logos, banners and complete brand identities.</p>
             <div class="cc-tags">
-              <span>Canva Advanced</span><span>Firefly AI</span><span>ChatGPT</span><span>Automation</span><span>Productivity</span>
+              <span>Canva</span><span>Photoshop</span><span>Logo Design</span><span>Branding</span>
+            </div>
+            <div class="cc-durations">
+              <span class="cc-basic">Basic: 2-3 Months</span>
+              <span class="cc-advanced">Advanced: 4-6 Months</span>
             </div>
             <div class="cc-bottom">
-              <span class="cc-duration"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 2-3 MONTHS</span>
-              <button class="cc-explore" data-course="Advanced Tools">EXPLORE <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
+              <button class="cc-explore" data-course="Graphic Design">EXPLORE COURSE <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Course 7 -->
+        <article class="course-card anim-scroll" data-course="Modeling Skill" data-category="modeling">
+          <div class="cc-img-wrap">
+            <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=600&h=400&fit=crop&q=80" alt="Modeling Skill" class="cc-img" loading="lazy">
+            <div class="cc-num">07</div>
+          </div>
+          <div class="cc-body">
+            <h3 class="cc-title">MODELING SKILL</h3>
+            <p class="cc-desc">Build confidence, camera facing skills and professional portfolio for modeling.</p>
+            <div class="cc-tags">
+              <span>Body Language</span><span>Camera Facing</span><span>Portfolio</span><span>Fashion</span>
+            </div>
+            <div class="cc-durations">
+              <span class="cc-basic">Basic: 2-3 Months</span>
+              <span class="cc-advanced">Advanced: 4-6 Months</span>
+            </div>
+            <div class="cc-bottom">
+              <button class="cc-explore" data-course="Modeling Skill">EXPLORE COURSE <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Course 8 -->
+        <article class="course-card anim-scroll" data-course="Personality Development" data-category="personality">
+          <div class="cc-img-wrap">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop&q=80" alt="Personality Development" class="cc-img" loading="lazy">
+            <div class="cc-num">08</div>
+          </div>
+          <div class="cc-body">
+            <h3 class="cc-title">PERSONALITY DEVELOPMENT</h3>
+            <p class="cc-desc">Transform your personality with communication, interview skills and leadership.</p>
+            <div class="cc-tags">
+              <span>Communication</span><span>Interview</span><span>Leadership</span><span>Grooming</span>
+            </div>
+            <div class="cc-durations">
+              <span class="cc-basic">Basic: 2-3 Months</span>
+              <span class="cc-advanced">Advanced: 4-6 Months</span>
+            </div>
+            <div class="cc-bottom">
+              <button class="cc-explore" data-course="Personality Development">EXPLORE COURSE <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
             </div>
           </div>
         </article>
       </div>
-      <div class="courses-empty" id="coursesEmpty" style="display:none">
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        <p class="empty-title">No course found</p>
-        <p class="empty-sub">Try another keyword.</p>
-      </div>
+    </div>
+  </section>
     </div>
   </section>
 
@@ -731,7 +837,7 @@
         <p class="hindi cta-subtitle">आज सही skill सीखना शुरू करें.</p>
         <div class="cta-stats">
           <div class="cta-stat">
-            <span class="cta-stat-num">6+</span>
+            <span class="cta-stat-num">8</span>
             <span class="cta-stat-label">Courses</span>
           </div>
           <div class="cta-stat-sep"></div>

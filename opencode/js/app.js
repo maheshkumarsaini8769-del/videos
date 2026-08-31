@@ -151,21 +151,25 @@
   var searchResults = document.getElementById('searchResults');
 
   var coursesData = [
-    { name: 'Digital Marketing', num: '01', desc: 'SEO, Social Media, Google Ads, YouTube', skills: ['SEO', 'Social Media', 'Google Ads', 'YouTube', 'Email Marketing', 'Content Marketing'], duration: '2-3 MONTHS' },
-    { name: 'Graphic Design', num: '02', desc: 'Photoshop, Illustrator, Canva, Logo, Branding', skills: ['Photoshop', 'Illustrator', 'Canva', 'Logo', 'Banner', 'Poster', 'Branding'], duration: '2-3 MONTHS' },
-    { name: 'Video Editing', num: '03', desc: 'Premiere Pro, After Effects, Color Grading', skills: ['Premiere Pro', 'After Effects', 'Color Grading', 'Reels', 'YouTube'], duration: '2-3 MONTHS' },
-    { name: 'Video Shooting', num: '04', desc: 'Camera Basics, Lighting, Composition', skills: ['Camera Basics', 'Lighting', 'Composition', 'Storytelling', 'Practical'], duration: '2-3 MONTHS' },
-    { name: 'Personality Development', num: '05', desc: 'Communication, Public Speaking, Interview', skills: ['Communication', 'Confidence', 'Public Speaking', 'Interview', 'Time Management'], duration: '2-3 MONTHS' },
-    { name: 'Advanced Tools', num: '06', desc: 'Canva Advanced, Firefly AI, ChatGPT, Automation', skills: ['Canva Advanced', 'Firefly AI', 'ChatGPT', 'AI Tools', 'Automation', 'Productivity'], duration: '2-3 MONTHS' }
+    { name: 'Video Editing', num: '01', category: 'video', desc: 'VN, CapCut, Premiere Pro, After Effects', skills: ['VN Editor', 'CapCut', 'Premiere Pro', 'After Effects', 'Color Grading', 'Motion Graphics', 'Reels', 'YouTube'], basicDuration: '2-3 MONTHS', advancedDuration: '4-6 MONTHS' },
+    { name: 'Video Shooting', num: '02', category: 'video', desc: 'Camera Basics, Lighting, Cinematic Shots', skills: ['Camera Basics', 'Lighting', 'Angles', 'Framing', 'Gimbal', 'Cinematic', 'Indoor', 'Outdoor'], basicDuration: '2-3 MONTHS', advancedDuration: '4-6 MONTHS' },
+    { name: 'Digital Marketing', num: '03', category: 'marketing', desc: 'SEO, Social Media, Meta Ads, Google', skills: ['SEO', 'Social Media', 'Facebook', 'Instagram', 'Meta Ads', 'Google', 'Lead Gen', 'E-commerce'], basicDuration: '3 MONTHS', advancedDuration: '6 MONTHS' },
+    { name: 'Content Creation', num: '04', category: 'content', desc: 'Script Writing, Reels, Personal Branding', skills: ['Script Writing', 'Reels', 'Trend Research', 'Personal Branding', 'Storytelling', 'YouTube'], basicDuration: '2-3 MONTHS', advancedDuration: '4-6 MONTHS' },
+    { name: 'Content Editing', num: '05', category: 'content', desc: 'Reels Editing, Motion Graphics, Brand Videos', skills: ['Reels Editing', 'Motion Graphics', 'Text Effects', 'Short Form', 'Brand Videos', 'Creative Editing'], basicDuration: '2-3 MONTHS', advancedDuration: '4-6 MONTHS' },
+    { name: 'Graphic Design', num: '06', category: 'design', desc: 'Canva, Photoshop, Logo, Branding', skills: ['Canva', 'Photoshop', 'Visiting Cards', 'Banners', 'Posters', 'Logo Design', 'Branding'], basicDuration: '2-3 MONTHS', advancedDuration: '4-6 MONTHS' },
+    { name: 'Modeling Skill', num: '07', category: 'modeling', desc: 'Body Language, Camera Facing, Portfolio', skills: ['Body Language', 'Camera Facing', 'Posing', 'Fashion', 'Portfolio', 'Runway', 'Brand Collab'], basicDuration: '2-3 MONTHS', advancedDuration: '4-6 MONTHS' },
+    { name: 'Personality Development', num: '08', category: 'personality', desc: 'Communication, Interview, Leadership', skills: ['Communication', 'Public Speaking', 'Interview', 'Leadership', 'Grooming', 'Stage Performance'], basicDuration: '2-3 MONTHS', advancedDuration: '4-6 MONTHS' }
   ];
 
   var courseIcons = {
-    'Digital Marketing': '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>',
-    'Graphic Design': '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/></svg>',
     'Video Editing': '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>',
     'Video Shooting': '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>',
-    'Personality Development': '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>',
-    'Advanced Tools': '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>'
+    'Digital Marketing': '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>',
+    'Content Creation': '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>',
+    'Content Editing': '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>',
+    'Graphic Design': '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/></svg>',
+    'Modeling Skill': '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>',
+    'Personality Development': '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>'
   };
 
   function openSearch() {
@@ -193,7 +197,7 @@
     if (!q || !q.trim()) { renderDefaultSearch(); return; }
     var query = q.toLowerCase().trim();
     var results = coursesData.filter(function(c) {
-      return c.name.toLowerCase().includes(query) || c.desc.toLowerCase().includes(query) || c.skills.some(function(s) { return s.toLowerCase().includes(query); });
+      return c.name.toLowerCase().includes(query) || c.desc.toLowerCase().includes(query) || c.category.toLowerCase().includes(query) || c.skills.some(function(s) { return s.toLowerCase().includes(query); });
     });
     if (results.length === 0) {
       searchResults.innerHTML = '<div class="search-empty"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><p class="empty-title">No course found</p><p class="empty-sub">Try another keyword.</p></div>';
@@ -203,7 +207,7 @@
     results.forEach(function(c) {
       var courseData = courseDetails[c.name];
       var imgSrc = courseData ? courseData.img : '';
-      html += '<div class="sr-item" data-course="' + c.name + '"><div class="sr-thumb"><img src="' + imgSrc + '" alt="' + c.name + '" loading="lazy"></div><div class="sr-info"><h4>' + c.name + '</h4><p>' + c.skills.slice(0, 4).join(', ') + ' • ' + c.duration + '</p></div></div>';
+      html += '<div class="sr-item" data-course="' + c.name + '"><div class="sr-thumb"><img src="' + imgSrc + '" alt="' + c.name + '" loading="lazy"></div><div class="sr-info"><h4>' + c.name + '</h4><p>' + c.skills.slice(0, 4).join(', ') + ' • ' + c.basicDuration + '</p></div></div>';
     });
     searchResults.innerHTML = html;
     searchResults.querySelectorAll('.sr-item').forEach(function(item) {
@@ -237,12 +241,62 @@
 
   // ========== COURSE DETAIL MODAL ==========
   var courseDetails = {
-    'Digital Marketing': { img: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&fit=crop&q=80', overview: 'Master the art of online marketing with hands-on training in SEO, social media management, Google Ads, YouTube marketing, email campaigns, and content marketing strategies.', skills: ['SEO', 'Social Media', 'Google Ads', 'YouTube', 'Email Marketing', 'Content Marketing'], tools: 'Google Analytics, Google Ads, Meta Business Suite, SEMrush, Mailchimp, WordPress', career: 'Digital Marketing Executive, Social Media Manager, SEO Specialist, Content Marketer' },
-    'Graphic Design': { img: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&fit=crop&q=80', overview: 'Create stunning visual designs and brand identities using professional tools like Photoshop, Illustrator, and Canva. Learn to design logos, banners, posters, and complete branding.', skills: ['Photoshop', 'Illustrator', 'Canva', 'Logo', 'Banner', 'Poster', 'Branding'], tools: 'Adobe Photoshop, Adobe Illustrator, Canva Pro, Figma', career: 'Graphic Designer, UI Designer, Brand Designer, Freelance Designer' },
-    'Video Editing': { img: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&fit=crop&q=80', overview: 'Learn professional video editing from raw footage to polished final products. Master Premiere Pro, After Effects, color grading, and YouTube content creation.', skills: ['Premiere Pro', 'After Effects', 'Color Grading', 'Reels', 'YouTube'], tools: 'Adobe Premiere Pro, After Effects, DaVinci Resolve, CapCut', career: 'Video Editor, Content Creator, YouTube Editor, Film Editor' },
-    'Video Shooting': { img: 'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=800&fit=crop&q=80', overview: 'Master camera techniques, lighting, composition, and video production from concept to capture. Learn indoor and outdoor shooting and video storytelling.', skills: ['Camera Basics', 'Lighting', 'Composition', 'Storytelling', 'Practical'], tools: 'DSLR Cameras, Mirrorless Cameras, Lighting Equipment, Stabilizers', career: 'Videographer, Camera Operator, Content Creator, YouTube Creator' },
-    'Personality Development': { img: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&fit=crop&q=80', overview: 'Build confidence and communication skills for professional success. Master public speaking, body language, interview skills, and time management.', skills: ['Communication', 'Confidence', 'Public Speaking', 'Interview', 'Time Management'], tools: 'Presentation Software, Recording Equipment, Behavioral Assessment Tools', career: 'Professional Development, Interview Success, Leadership Skills, Public Speaking' },
-    'Advanced Tools': { img: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&fit=crop&q=80', overview: 'Harness the power of AI and modern tools for maximum productivity. Learn Canva Advanced, Adobe Firefly AI, ChatGPT, automation workflows, and productivity tools.', skills: ['Canva Advanced', 'Firefly AI', 'ChatGPT', 'AI Tools', 'Automation', 'Productivity'], tools: 'Canva Pro, Adobe Firefly, ChatGPT, Zapier, Notion, Grammarly', career: 'AI Specialist, Content Automation Expert, Digital Productivity Consultant' }
+    'Video Editing': {
+      img: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&fit=crop&q=80',
+      overview: 'Master video editing from mobile to professional level. Learn industry-standard tools and create stunning videos for social media, YouTube, and clients.',
+      basic: { duration: '2-3 Months', topics: ['Introduction to Video Editing', 'Mobile Editing', 'VN Editor', 'CapCut Basics', 'Reels Editing', 'Text Animation', 'Music Sync', 'Basic Transitions', 'Social Media Video Editing'] },
+      advanced: { duration: '4-6 Months', topics: ['Adobe Premiere Pro', 'Professional Timeline Editing', 'Color Correction', 'Color Grading', 'Cinematic Editing', 'YouTube Video Editing', 'Motion Graphics', 'Green Screen Editing', 'Sound Design', 'Commercial Video Editing', 'Client Project Handling'] },
+      tools: 'Adobe Premiere Pro, After Effects, DaVinci Resolve, CapCut, VN Editor'
+    },
+    'Video Shooting': {
+      img: 'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=800&fit=crop&q=80',
+      overview: 'Learn professional video shooting from basics to advanced cinematography. Master camera techniques, lighting, and production for various industries.',
+      basic: { duration: '2-3 Months', topics: ['Mobile Videography', 'Camera Basics', 'Angles & Framing', 'Lighting Setup', 'Indoor Shoot', 'Outdoor Shoot', 'Reels Shooting'] },
+      advanced: { duration: '4-6 Months', topics: ['Professional Camera Handling', 'Gimbal Usage', 'Cinematic Shots', 'Product Shoot', 'Fashion Shoot', 'Wedding Shoot', 'Real Estate Shoot', 'Commercial Shoot', 'Client Handling'] },
+      tools: 'DSLR Cameras, Mirrorless Cameras, Lighting Equipment, Stabilizers, Gimbals'
+    },
+    'Digital Marketing': {
+      img: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&fit=crop&q=80',
+      overview: 'Master digital marketing from social media to advanced advertising. Build brands, generate leads, and grow businesses online.',
+      basic: { duration: '3 Months', topics: ['Social Media Marketing', 'Facebook Marketing', 'Instagram Marketing', 'Content Strategy', 'Branding', 'Basic SEO'] },
+      advanced: { duration: '6 Months', topics: ['Meta Ads', 'Facebook Ads', 'Instagram Ads', 'Lead Generation', 'Google Marketing Basics', 'SEO Advanced', 'E-commerce Marketing', 'Business Growth Strategy', 'Funnel Creation', 'Campaign Management'] },
+      tools: 'Google Analytics, Google Ads, Meta Business Suite, SEMrush, Mailchimp, WordPress'
+    },
+    'Content Creation': {
+      img: 'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=800&fit=crop&q=80',
+      overview: 'Learn to create engaging content for social media, YouTube, and brands. Master scripting, planning, and personal branding.',
+      basic: { duration: '2-3 Months', topics: ['Content Planning', 'Script Writing', 'Reel Ideas', 'Trend Research', 'Content Calendar'] },
+      advanced: { duration: '4-6 Months', topics: ['Personal Branding', 'Viral Content Strategy', 'Storytelling', 'Audience Psychology', 'Professional Content Creation', 'YouTube Strategy', 'Instagram Growth Strategy'] },
+      tools: 'Smartphone, Tripod, Ring Light, Canva, CapCut, Instagram, YouTube'
+    },
+    'Content Editing': {
+      img: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&fit=crop&q=80',
+      overview: 'Specialize in editing content for social media and brands. Master reels editing, motion graphics, and creative techniques.',
+      basic: { duration: '2-3 Months', topics: ['Reels Editing', 'Social Media Editing', 'Basic Motion Graphics', 'Text Effects', 'Short Form Content'] },
+      advanced: { duration: '4-6 Months', topics: ['Advanced Motion Graphics', 'Professional Reels', 'Commercial Content Editing', 'Brand Video Editing', 'Creative Editing Techniques'] },
+      tools: 'Adobe Premiere Pro, After Effects, CapCut, Canva Pro'
+    },
+    'Graphic Design': {
+      img: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&fit=crop&q=80',
+      overview: 'Create stunning visual designs from social media posts to complete brand identities. Master Canva, Photoshop, and professional design.',
+      basic: { duration: '2-3 Months', topics: ['Canva Design', 'Social Media Posts', 'Visiting Cards', 'Banners', 'Posters', 'Thumbnails'] },
+      advanced: { duration: '4-6 Months', topics: ['Adobe Photoshop', 'Professional Branding', 'Logo Design', 'Advertisement Design', 'Product Mockups', 'Marketing Creatives'] },
+      tools: 'Canva, Adobe Photoshop, Adobe Illustrator, Figma'
+    },
+    'Modeling Skill': {
+      img: 'https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=800&fit=crop&q=80',
+      overview: 'Build confidence and skills for modeling. Learn body language, camera facing, and professional portfolio development.',
+      basic: { duration: '2-3 Months', topics: ['Body Language', 'Camera Facing', 'Confidence Building', 'Pose Practice', 'Introduction to Modeling'] },
+      advanced: { duration: '4-6 Months', topics: ['Fashion Modeling', 'Commercial Modeling', 'Portfolio Shoot', 'Runway Basics', 'Brand Collaboration'] },
+      tools: 'Camera, Lighting Setup, Studio Environment, Portfolio Materials'
+    },
+    'Personality Development': {
+      img: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&fit=crop&q=80',
+      overview: 'Transform your personality for professional success. Master communication, interview skills, leadership, and personal branding.',
+      basic: { duration: '2-3 Months', topics: ['Communication Skills', 'Public Speaking', 'Confidence Building', 'Grooming Skills', 'Body Language'] },
+      advanced: { duration: '4-6 Months', topics: ['Interview Skills', 'Leadership Skills', 'Professional Communication', 'Stage Performance', 'Personal Branding'] },
+      tools: 'Presentation Software, Recording Equipment, Behavioral Assessment Tools'
+    }
   };
 
   var courseModal = document.getElementById('courseModal');
@@ -267,16 +321,41 @@
     cmTitle.textContent = name;
     cmOverview.textContent = c.overview;
     cmTools.textContent = c.tools;
-    cmCareer.textContent = c.career;
-    cmSkills.innerHTML = '';
-    c.skills.forEach(function(s) {
-      var span = document.createElement('span'); span.className = 'cm-skill'; span.textContent = s;
-      cmSkills.appendChild(span);
-    });
+    
+    // Set Basic tab as default
+    showCourseTab('basic');
+    
     courseModal.classList.add('open');
     document.body.classList.add('no-scroll');
     history.pushState({ modal: 'course' }, '');
     setTimeout(function() { cmClose.focus(); }, 100);
+  }
+
+  var currentTab = 'basic';
+  window.showCourseTab = function(tab) {
+    currentTab = tab;
+    var c = courseDetails[currentCourseName];
+    if (!c) return;
+    var data = tab === 'basic' ? c.basic : c.advanced;
+    
+    // Update tabs
+    document.querySelectorAll('.cm-tab').forEach(function(t) {
+      t.classList.toggle('active', t.getAttribute('data-tab') === tab);
+    });
+    
+    // Update content
+    var cmDuration = document.getElementById('cmDuration');
+    var cmTopics = document.getElementById('cmTopics');
+    var cmSectionTitle = document.getElementById('cmSectionTitle');
+    
+    if (cmDuration) cmDuration.textContent = data.duration;
+    if (cmSectionTitle) cmSectionTitle.textContent = tab === 'basic' ? 'BASIC COURSE' : 'ADVANCE COURSE';
+    if (cmTopics) {
+      cmTopics.innerHTML = '';
+      data.topics.forEach(function(t) {
+        cmTopics.innerHTML += '<div class="cm-topic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span>' + t + '</span></div>';
+      });
+    }
   }
   function closeCourseModal() {
     courseModal.classList.remove('open');
@@ -295,6 +374,25 @@
   cmClose.addEventListener('click', closeCourseModal);
   cmBackdrop.addEventListener('click', closeCourseModal);
   cmApplyBtn.addEventListener('click', function() { closeCourseModal(); openAppModal(currentCourseName); });
+
+  // ========== COURSE FILTERS ==========
+  document.querySelectorAll('.filter-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var filter = this.getAttribute('data-filter');
+      document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
+      this.classList.add('active');
+      
+      document.querySelectorAll('.course-card').forEach(function(card) {
+        var category = card.getAttribute('data-category');
+        if (filter === 'all' || category === filter) {
+          card.style.display = '';
+          card.style.animation = 'fadeIn 0.4s ease';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
 
   // ========== APPLICATION MODAL ==========
   var appModal = document.getElementById('appModal');

@@ -1,579 +1,1263 @@
-# SDC WEBSITE — FINAL ORIGINKIT TORNADO INTEGRATION
-
-Integrate the Originkit "Tornado" component into the existing SDC Squad Digital Classes website.
-
-The website's established visual identity is:
-
-WHITE + PREMIUM BLUE + SOFT WATERCOLOUR + SMALL SDC GOLD ACCENTS.
-
-The Tornado must be redesigned/styled to perfectly match this website.
-
-DO NOT use the default Tornado colors if they conflict with the website.
-
---------------------------------------------------
-1. TORNADO LOCATION
---------------------------------------------------
-
-Use ONLY ONE Tornado component.
-
-Place it inside the HERO SECTION.
-
-Desktop:
-- Right side of the hero
-- Behind/around the hero's main visual
-- It may partially surround the hero image
-- It must never interfere with headline readability
-
-The left side should remain clean for:
-
-DIGITAL SKILLS.
-REAL PROJECTS.
-BETTER CAREER.
-
-CTA buttons and text must remain completely readable.
-
-Do NOT use Tornado:
-- across the entire page
-- behind course cards
-- behind the application form
-- inside the footer
-- in multiple sections
-- as a full-screen background
-
-The Tornado is a HERO VISUAL EFFECT only.
-
---------------------------------------------------
-2. FINAL TORNADO COLOR PALETTE
---------------------------------------------------
-
-Use this exact color family:
-
-PRIMARY TORNADO:
-#1D4ED8
-
-SECONDARY:
-#3B82F6
-
-SOFT WATERCOLOUR BLUE:
-#60A5FA
-
-LIGHT GLOW:
-#BFDBFE
-
-SDC GOLD ACCENT:
-#F5B400
-
-BACKGROUND:
-TRANSPARENT
+# SDC SQUAD DIGITAL CLASSES — FINAL COURSE SYSTEM UPDATE
 
 IMPORTANT:
 
-Blue should dominate.
+The website has already been created.
 
-Gold should be extremely limited.
+DO NOT rebuild the entire website from scratch.
 
-Approximate visual balance:
+DO NOT destroy the existing design, animations, Tornado, watercolor theme, navbar, application popup or responsive system.
 
-75% Royal/Premium Blue
-20% Sky/Light Blue
-5% SDC Gold
+This task is to UPDATE and UPGRADE the existing website using the REAL COURSE INFORMATION from the two supplied SDC course-brochure images.
 
-Do NOT use:
-- Purple
-- Pink
-- Red
-- Green
-- Orange
-- Neon cyan-heavy appearance
-- Black background
+The brochure images are the authoritative source for course names, basic/advanced structure, durations and topics.
 
---------------------------------------------------
-3. VISUAL TARGET
---------------------------------------------------
+==================================================
+1. CRITICAL CORRECTION — THERE ARE 8 COURSES
+==================================================
 
-The Tornado should look like:
+The existing website incorrectly has only 6 courses.
 
-"Premium blue energy flowing through soft white watercolor."
+Replace the existing course data with these EXACT 8 courses:
 
-It should visually connect with the website's:
+1. VIDEO EDITING
+2. VIDEO SHOOTING
+3. DIGITAL MARKETING
+4. CONTENT CREATION
+5. CONTENT EDITING
+6. GRAPHIC DESIGN
+7. MODELING SKILL
+8. PERSONALITY DEVELOPMENT
 
-- white background
-- blue watercolor washes
-- blue buttons
-- blue borders
-- SDC gold accents
+Do NOT remove any of these.
 
-It must NOT look like a gaming/cyberpunk/Web3 animation.
+Do NOT rename them into generic alternatives.
 
-Avoid excessive neon glow.
+==================================================
+2. VERY IMPORTANT — DO NOT SHOW PRICES
+==================================================
 
-Keep the glow soft and elegant.
+The brochure contains course prices.
 
---------------------------------------------------
-4. WATERCOLOUR INTEGRATION
---------------------------------------------------
+DO NOT DISPLAY ANY PRICE anywhere on the website.
 
-Behind the Tornado add a very subtle watercolor atmosphere.
+Do NOT show:
 
-Use:
+₹6,000
+₹9,000
+₹12,000
+₹14,000
+₹18,000
+or any other price.
 
-- translucent blue watercolor cloud
-- soft radial blue glow
-- blurred watercolor wash
-- extremely subtle flowing blue shapes
+Do not show prices in:
 
-The watercolor must blend into the white background.
+- Course cards
+- Course detail page
+- Course modal
+- Application form
+- Search results
+- Homepage
+- Footer
+- SEO text
+- JSON data exposed to UI
+- Buttons
 
-Do NOT create a hard circular background behind Tornado.
+Instead of price, use:
 
-Do NOT create a solid blue rectangle.
+"Enquire Now"
 
-Do NOT create a dark panel.
+or
 
-The Tornado should appear to naturally emerge from the white/blue watercolor environment.
+"Get Course Details"
 
---------------------------------------------------
-5. TORNADO SHAPE
---------------------------------------------------
+or
 
-Use a visually elegant tornado shape.
+"Apply Now"
 
-Recommended:
+The website should focus on enquiry/application rather than pricing.
 
-Top:
-medium-wide
+==================================================
+3. COURSE STRUCTURE
+==================================================
 
-Middle/waist:
-noticeably narrower
+Every course has TWO levels:
 
-Bottom:
-medium-wide
+BASIC COURSE
 
-Twist:
-medium-high
+and
 
-The shape should be clearly visible but not enormous.
+ADVANCE COURSE
 
-It should occupy approximately:
+This structure must be clearly visible.
 
-30–40% of the desktop hero visual area.
+Example:
 
-Do not allow it to dominate the entire hero.
+VIDEO EDITING
 
---------------------------------------------------
-6. ANIMATION SPEED
---------------------------------------------------
+[BASIC COURSE]
+Duration: 2–3 Months
 
-Keep animation:
+[ADVANCE COURSE]
+Duration: 4–6 Months
 
-SLOW
-SMOOTH
-PREMIUM
-CONTROLLED
+Do not merge Basic and Advanced into one generic list.
 
-Do NOT use fast spinning.
+Create an elegant expandable/tabbed course detail experience.
 
-The viewer should notice movement only after looking at it for a moment.
+==================================================
+4. COURSE 1 — VIDEO EDITING
+==================================================
 
-Use smooth easing.
+Title:
 
-Avoid jitter.
+VIDEO EDITING
 
-Avoid sudden acceleration.
+BASIC COURSE
 
---------------------------------------------------
-7. PARTICLES
---------------------------------------------------
+Duration:
+2–3 Months
 
-Enable particles/dots.
+Topics Covered:
 
-Particle colors:
+- Introduction to Video Editing
+- Mobile Editing
+- VN Editor
+- CapCut Basics
+- Reels Editing
+- Text Animation
+- Music Sync
+- Basic Transitions
+- Social Media Video Editing
 
-Primary:
-#3B82F6
+ADVANCE COURSE
 
-Secondary:
-#60A5FA
+Duration:
+4–6 Months
 
-Very small percentage:
-#BFDBFE
+Advance Topics:
 
-Occasional premium accent:
-#F5B400
+- Adobe Premiere Pro
+- Professional Timeline Editing
+- Color Correction
+- Color Grading
+- Cinematic Editing
+- YouTube Video Editing
+- Motion Graphics
+- Green Screen Editing
+- Sound Design
+- Commercial Video Editing
+- Client Project Handling
 
-Gold particles must remain rare.
+==================================================
+5. COURSE 2 — VIDEO SHOOTING
+==================================================
 
-Do NOT make the entire Tornado sparkle gold.
+Title:
 
---------------------------------------------------
-8. COMETS
---------------------------------------------------
+VIDEO SHOOTING
 
-Enable subtle comet effects if supported.
+BASIC COURSE
 
-Comet colors:
+Duration:
+2–3 Months
 
-Main:
-#3B82F6
+Topics Covered:
 
-Highlight:
-#60A5FA
+- Mobile Videography
+- Camera Basics
+- Angles & Framing
+- Lighting Setup
+- Indoor Shoot
+- Outdoor Shoot
+- Reels Shooting
 
-Very occasional:
-#F5B400
+ADVANCE COURSE
 
-Comets should travel smoothly.
+Duration:
+4–6 Months
 
-Do NOT make them bright enough to distract from the hero heading.
+Advance Topics:
 
---------------------------------------------------
-9. GLOW
---------------------------------------------------
+- Professional Camera Handling
+- Gimbal Usage
+- Cinematic Shots
+- Product Shoot
+- Fashion Shoot
+- Wedding Shoot
+- Real Estate Shoot
+- Commercial Shoot
+- Client Handling
 
-Use a soft blue glow.
+==================================================
+6. COURSE 3 — DIGITAL MARKETING
+==================================================
 
-Recommended visual feeling:
+Title:
 
-Royal Blue core
-→ Sky Blue transition
-→ very soft Ice Blue outer glow
+DIGITAL MARKETING
 
-Do NOT use a harsh neon glow.
+BASIC COURSE
 
-The effect should blend with the white background.
+Duration:
+3 Months
 
---------------------------------------------------
-10. CURSOR INTERACTION
---------------------------------------------------
+Topics Covered:
 
-Enable cursor interaction / repel if supported.
+- Social Media Marketing
+- Facebook Marketing
+- Instagram Marketing
+- Content Strategy
+- Branding
+- Basic SEO
 
-When the user moves the mouse:
+ADVANCE COURSE
 
-particles should react subtly.
+Duration:
+6 Months
 
-The Tornado should slightly respond.
+Advance Topics:
 
-Do NOT make the interaction exaggerated.
+- Meta Ads
+- Facebook Ads
+- Instagram Ads
+- Lead Generation
+- Google Marketing Basics
+- SEO Advanced
+- E-commerce Marketing
+- Business Growth Strategy
+- Funnel Creation
+- Campaign Management
 
-It should feel like a premium interactive detail.
+==================================================
+7. COURSE 4 — CONTENT CREATION
+==================================================
 
---------------------------------------------------
-11. HERO IMAGE RELATIONSHIP
---------------------------------------------------
+Title:
 
-The Tornado should sit BEHIND the hero's main image/visual.
+CONTENT CREATION
 
-Layer order:
+BASIC COURSE
 
-Background watercolor
-↓
-Tornado
-↓
-Decorative particles
-↓
-Hero image
-↓
-Floating information cards
+Duration:
+2–3 Months
 
-Text must remain above the background effects and remain fully readable.
+Topics Covered:
 
-Use proper z-index layering.
+- Content Planning
+- Script Writing
+- Reel Ideas
+- Trend Research
+- Content Calendar
 
---------------------------------------------------
-12. RESPONSIVE BEHAVIOUR
---------------------------------------------------
+ADVANCE COURSE
+
+Duration:
+4–6 Months
+
+Advance Topics:
+
+- Personal Branding
+- Viral Content Strategy
+- Storytelling
+- Audience Psychology
+- Professional Content Creation
+- YouTube Strategy
+- Instagram Growth Strategy
+
+==================================================
+8. COURSE 5 — CONTENT EDITING
+==================================================
+
+Title:
+
+CONTENT EDITING
+
+BASIC COURSE
+
+Duration:
+2–3 Months
+
+Topics Covered:
+
+- Reels Editing
+- Social Media Editing
+- Basic Motion Graphics
+- Text Effects
+- Short Form Content
+
+ADVANCE COURSE
+
+Duration:
+4–6 Months
+
+Advance Topics:
+
+- Advanced Motion Graphics
+- Professional Reels
+- Commercial Content Editing
+- Brand Video Editing
+- Creative Editing Techniques
+
+==================================================
+9. COURSE 6 — GRAPHIC DESIGN
+==================================================
+
+Title:
+
+GRAPHIC DESIGN
+
+BASIC COURSE
+
+Duration:
+2–3 Months
+
+Topics Covered:
+
+- Canva Design
+- Social Media Posts
+- Visiting Cards
+- Banners
+- Posters
+- Thumbnails
+
+ADVANCE COURSE
+
+Duration:
+4–6 Months
+
+Advance Topics:
+
+- Adobe Photoshop
+- Professional Branding
+- Logo Design
+- Advertisement Design
+- Product Mockups
+- Marketing Creatives
+
+==================================================
+10. COURSE 7 — MODELING SKILL
+==================================================
+
+Title:
+
+MODELING SKILL
+
+BASIC COURSE
+
+Duration:
+2–3 Months
+
+Topics Covered:
+
+- Body Language
+- Camera Facing
+- Confidence Building
+- Pose Practice
+- Introduction to Modeling
+
+ADVANCE COURSE
+
+Duration:
+4–6 Months
+
+Advance Topics:
+
+- Fashion Modeling
+- Commercial Modeling
+- Portfolio Shoot
+- Runway Basics
+- Brand Collaboration
+
+==================================================
+11. COURSE 8 — PERSONALITY DEVELOPMENT
+==================================================
+
+Title:
+
+PERSONALITY DEVELOPMENT
+
+BASIC COURSE
+
+Duration:
+2–3 Months
+
+Topics Covered:
+
+- Communication Skills
+- Public Speaking
+- Confidence Building
+- Grooming Skills
+- Body Language
+
+ADVANCE COURSE
+
+Duration:
+4–6 Months
+
+Advance Topics:
+
+- Interview Skills
+- Leadership Skills
+- Professional Communication
+- Stage Performance
+- Personal Branding
+
+==================================================
+12. COURSE CARD REDESIGN
+==================================================
+
+Upgrade the existing course cards.
+
+Do NOT simply add more text to the current cards.
+
+Because there are now 8 courses, create a premium course grid.
 
 Desktop:
-Full Tornado experience.
+
+4 cards per row OR an intelligently designed 3+3+2 layout.
 
 Tablet:
-Reduce Tornado scale and particle density.
+
+2 cards per row.
 
 Mobile:
-Reduce size significantly.
 
-If WebGL performance becomes poor on mobile:
+1 card per row.
 
-Use a lighter version or disable the Tornado gracefully.
+Each card should contain:
 
-The mobile hero must remain beautiful even without the full effect.
+Course number
 
-Never allow the animation to cause:
+Course title
 
-- horizontal overflow
-- layout shifting
-- slow scrolling
-- excessive battery usage
+Short description
 
---------------------------------------------------
-13. PERFORMANCE
---------------------------------------------------
+Basic duration
 
-Only ONE Tornado instance.
+Advanced duration
 
-Do not create multiple WebGL canvases.
+Visual/image
 
-Use lazy initialization where appropriate.
+"Explore Course →"
 
-Respect:
+Do NOT show price.
 
-prefers-reduced-motion
+==================================================
+13. COURSE CARD VISUALS
+==================================================
 
-If user has reduced motion enabled:
+Use relevant high-quality visuals.
 
-Use a static/lightweight visual fallback.
+Avoid generic random photographs.
 
-If WebGL is unavailable:
+Suggested visual direction:
 
-Show a beautiful static watercolor blue background instead of a broken canvas.
+VIDEO EDITING:
+professional editing workstation / timeline / video production
 
-No console errors.
+VIDEO SHOOTING:
+professional camera / cinematic production setup
 
---------------------------------------------------
-14. IMPORTANT — NO TAILWIND
---------------------------------------------------
+DIGITAL MARKETING:
+marketing analytics / social media campaign workspace
 
-The project must NOT use Tailwind CSS.
+CONTENT CREATION:
+creator setup / microphone / camera / content planning
+
+CONTENT EDITING:
+creative editing workstation / reels workflow
+
+GRAPHIC DESIGN:
+professional designer workstation
+
+MODELING SKILL:
+professional fashion/editorial studio environment
+
+PERSONALITY DEVELOPMENT:
+professional presentation / communication environment
+
+Use premium realistic photography where appropriate.
+
+Do not use obviously fake AI faces.
+
+==================================================
+14. COURSE DETAIL MODAL
+==================================================
+
+When user clicks:
+
+"Explore Course"
+
+open a large premium course detail modal/page.
+
+Structure:
+
+COURSE NAME
+
+Short course introduction
+
+--------------------------------
+
+BASIC COURSE
+
+Duration
+
+Topics Covered
+
+Topic list
+
+--------------------------------
+
+ADVANCE COURSE
+
+Duration
+
+Advance Topics
+
+Topic list
+
+--------------------------------
+
+STUDENT BENEFITS
+
+- Practical Training
+- Real Client Projects
+- Portfolio Development
+- Confidence Building
+- Creative Skill Development
+- Industry Exposure
+- Certificate of Completion
+- Live Interview Preparation
+- Outdoor Projects
+
+--------------------------------
+
+CTA
+
+"APPLY FOR THIS COURSE"
+
+"GET COURSE DETAILS"
+
+Do not display any price.
+
+==================================================
+15. APPLICATION FORM INTEGRATION
+==================================================
+
+The existing application popup must now contain ALL 8 courses.
+
+Course selection:
+
+□ Video Editing
+□ Video Shooting
+□ Digital Marketing
+□ Content Creation
+□ Content Editing
+□ Graphic Design
+□ Modeling Skill
+□ Personality Development
+
+Multiple selection MUST remain enabled.
+
+User can select:
+
+1 course
+
+2 courses
+
+3 courses
+
+or all 8 courses.
+
+Do not use a single-select dropdown.
+
+==================================================
+16. COURSE-SPECIFIC APPLY BUTTON
+==================================================
+
+If user opens:
+
+VIDEO EDITING
+
+and clicks:
+
+"APPLY FOR THIS COURSE"
+
+the application popup must automatically pre-select:
+
+✓ Video Editing
+
+But the user must still be able to select additional courses.
+
+Example:
+
+✓ Video Editing
+✓ Graphic Design
+✓ Content Creation
+
+This must work dynamically.
+
+==================================================
+17. APPLICATION DATA
+==================================================
+
+Submission data should contain:
+
+name
+
+mobile
+
+selectedCourses[]
+
+timestamp
+
+source
+
+If the user selects multiple courses, selectedCourses must be an array.
+
+Example:
+
+selectedCourses:
+[
+  "Video Editing",
+  "Graphic Design",
+  "Content Creation"
+]
+
+==================================================
+18. STUDENT BENEFITS
+==================================================
+
+Update the benefits section using the brochure's actual benefits.
+
+Create premium animated cards for:
+
+LIVE INTERVIEW PREPARATION
+
+PRACTICAL TRAINING
+
+OUTDOOR PROJECTS
+
+REAL CLIENT PROJECTS
+
+CERTIFICATE OF COMPLETION
+
+PORTFOLIO DEVELOPMENT
+
+CONFIDENCE BUILDING
+
+CREATIVE SKILL DEVELOPMENT
+
+INDUSTRY EXPOSURE
+
+Use icon + short description.
+
+Do not fabricate additional claims.
+
+==================================================
+19. COURSE CATEGORY SECTION
+==================================================
+
+Add a beautiful course category navigation/filter.
+
+Categories:
+
+All Courses
+
+Video
+
+Marketing
+
+Content
+
+Design
+
+Modeling
+
+Personality Development
+
+When user clicks a category:
+
+show matching courses with smooth filtering animation.
+
+Example:
+
+Video
+
+→ Video Editing
+→ Video Shooting
+→ Content Editing
+
+Marketing
+
+→ Digital Marketing
+
+Design
+
+→ Graphic Design
+
+Modeling
+
+→ Modeling Skill
+
+Personality
+
+→ Personality Development
+
+==================================================
+20. SEARCH SYSTEM UPDATE
+==================================================
+
+Existing search must now search ALL 8 courses.
+
+Search should also search topics.
+
+Example:
+
+Search:
+
+"Premiere"
+
+Result:
+
+Video Editing
+
+Search:
+
+"Camera"
+
+Result:
+
+Video Shooting
+
+Search:
+
+"SEO"
+
+Result:
+
+Digital Marketing
+
+Search:
+
+"Canva"
+
+Result:
+
+Graphic Design
+
+Search:
+
+"Modeling"
+
+Result:
+
+Modeling Skill
+
+Search:
+
+"Interview"
+
+Result:
+
+Personality Development
+
+Search:
+
+"Reels"
+
+Results:
+
+Video Editing
+Content Editing
+Content Creation
+
+==================================================
+21. SEARCH RESULT UI
+==================================================
+
+Search result should show:
+
+Course number
+
+Course name
+
+Matching topic
+
+"View Course →"
+
+Animate results smoothly.
+
+If nothing matches:
+
+"No matching course found."
+
+"Try another skill or course name."
+
+==================================================
+22. COURSE DATA ARCHITECTURE
+==================================================
+
+Do NOT hardcode the same course information in multiple HTML locations.
+
+Create a central course data object/JSON structure.
+
+Example structure:
+
+courses = [
+  {
+    id: "video-editing",
+    title: "Video Editing",
+    basic: {
+      duration: "2–3 Months",
+      topics: [...]
+    },
+    advanced: {
+      duration: "4–6 Months",
+      topics: [...]
+    }
+  }
+]
+
+Do this for all 8 courses.
+
+The UI should be generated from this data.
+
+This prevents inconsistencies.
+
+==================================================
+23. PRICE REMOVAL CHECK
+==================================================
+
+Search the entire project for:
+
+₹
+
+₹6,000
+
+₹9,000
+
+₹12,000
+
+₹14,000
+
+₹18,000
+
+price
+
+course price
+
+fee
+
+fees
+
+Remove course pricing from visible UI.
+
+Do NOT accidentally leave prices inside:
+
+- hidden mobile sections
+- modal
+- course JSON displayed to frontend
+- tooltips
+- search results
+- metadata
+- structured data
+
+The website should present:
+
+"Contact us for course details"
+
+instead.
+
+==================================================
+24. COURSE SECTION DESIGN
+==================================================
+
+Maintain the existing:
+
+WHITE + WATERCOLOUR BLUE
+
+theme.
+
+Course section should use:
+
+white cards
+
+soft sky-blue watercolor background
+
+royal blue accents
+
+small SDC gold accents
+
+premium shadows
+
+soft borders
+
+large rounded corners
+
+Do not turn the course section dark.
+
+==================================================
+25. COURSE ANIMATIONS
+==================================================
+
+On scroll:
+
+course cards should reveal with stagger animation.
 
 Use:
+
+fade-up
+
+slight scale
+
+image reveal
+
+soft blur-to-clear
+
+Do not use aggressive bouncing.
+
+On hover:
+
+image:
+scale 1.03
+
+card:
+translateY(-6px)
+
+button:
+arrow moves slightly
+
+shadow:
+smooth increase
+
+==================================================
+26. BASIC / ADVANCED SWITCH
+==================================================
+
+Inside course detail experience create a beautiful switch:
+
+[BASIC COURSE] [ADVANCE COURSE]
+
+Clicking Basic:
+
+show basic duration + topics.
+
+Clicking Advance:
+
+show advanced duration + topics.
+
+Animate content transition.
+
+Do not reload page.
+
+==================================================
+27. MOBILE COURSE EXPERIENCE
+==================================================
+
+On mobile:
+
+Course cards remain easy to read.
+
+Course detail should become a full-screen or near-full-screen modal.
+
+Basic/Advanced switch must remain visible.
+
+Topic lists should be scrollable.
+
+Apply button should remain easy to reach.
+
+No horizontal overflow.
+
+==================================================
+28. COURSE TOPIC UI
+==================================================
+
+Do not display topics as one giant paragraph.
+
+Use:
+
+✓ Topic
+
+✓ Topic
+
+✓ Topic
+
+with clean spacing.
+
+For advanced topics, use a slightly stronger visual accent.
+
+Do not make every topic a giant card.
+
+==================================================
+29. COURSE COUNT
+==================================================
+
+Display:
+
+"8 Career-Focused Courses"
+
+Do not say:
+
+"6 Courses"
+
+anywhere on the website.
+
+Update all counters/headings accordingly.
+
+==================================================
+30. HOMEPAGE COURSE INTRO
+==================================================
+
+Replace old heading if necessary with:
+
+# EXPLORE OUR COURSES
+
+Subheading:
+
+**Practical digital skills, creative skills and professional development designed for today's opportunities.**
+
+Small badge:
+
+**8 CAREER-FOCUSED COURSES**
+
+==================================================
+31. BROCHURE BENEFITS
+==================================================
+
+Use these exact student benefit concepts:
+
+- Live Interview Preparation
+- Practical Training
+- Outdoor Projects
+- Real Client Projects
+- Certificate of Completion
+- Portfolio Development
+- Confidence Building
+- Creative Skill Development
+- Industry Exposure
+
+Do not add fake benefits.
+
+==================================================
+32. COURSE CTA
+==================================================
+
+Instead of showing pricing:
+
+Use:
+
+"EXPLORE COURSE"
+
+"GET DETAILS"
+
+"APPLY NOW"
+
+"ENQUIRE NOW"
+
+Do not use:
+
+"Buy Course"
+
+because this website currently functions as an enquiry/application website.
+
+==================================================
+33. CONTACT NUMBER
+==================================================
+
+Continue using:
+
+7742735762
+
+Call:
+
+7742735762
+
+WhatsApp:
+
+7742735762
+
+Do NOT change this number.
+
+Do NOT copy the brochure's printed phone number:
+
+7424986155
+
+The website contact number remains:
+
+7742735762
+
+==================================================
+34. LOCATION
+==================================================
+
+Use:
+
+Near Badri Vihar, Sikar
+
+or, where the existing website already uses the fuller wording:
+
+Badari Vihar Ke Samne, First Floor, Sikar
+
+Do not invent an exact map coordinate.
+
+==================================================
+35. DO NOT DAMAGE EXISTING DESIGN
+==================================================
+
+The existing website already has:
+
+- white theme
+- watercolor blue background
+- Tornado animation
+- navbar
+- search
+- application popup
+- floating WhatsApp
+- floating Call button
+- responsive layout
+
+KEEP THESE.
+
+Only improve them if necessary to integrate the new course system.
+
+Do NOT replace the Tornado.
+
+Do NOT introduce a dark theme.
+
+Do NOT add Tailwind CSS.
+
+==================================================
+36. NO TAILWIND
+==================================================
+
+ABSOLUTE REQUIREMENT:
+
+Do NOT install or introduce Tailwind CSS.
+
+Use the existing:
 
 HTML
+
 CSS
+
 JavaScript
 
-If the Originkit component source contains Tailwind utility classes:
+architecture.
 
-DO NOT introduce Tailwind into the project.
+==================================================
+37. QUALITY CONTROL
+==================================================
 
-Instead adapt/convert the required styling into the existing normal CSS architecture while preserving the component's functionality and appearance.
+After implementation:
 
---------------------------------------------------
-15. WEBSITE COLOR CONSISTENCY
---------------------------------------------------
+Search the entire project for old course data.
 
-The Tornado colors must match the rest of the website.
+Remove old 6-course references.
+
+Confirm there are exactly 8 courses.
+
+Confirm every course has:
+
+Basic Course
+
+Advanced Course
+
+Duration
+
+Topics
+
+Confirm no price is visible.
+
+Confirm multi-course application selection works.
+
+Confirm course-specific Apply buttons work.
+
+Confirm search works.
+
+Confirm filters work.
+
+Confirm mobile works.
+
+Confirm desktop works.
+
+Confirm no console errors.
+
+Confirm no broken images.
+
+==================================================
+38. FINAL COURSE CHECKLIST
+==================================================
+
+The website must contain exactly:
+
+01 — VIDEO EDITING
+
+02 — VIDEO SHOOTING
+
+03 — DIGITAL MARKETING
+
+04 — CONTENT CREATION
+
+05 — CONTENT EDITING
+
+06 — GRAPHIC DESIGN
+
+07 — MODELING SKILL
+
+08 — PERSONALITY DEVELOPMENT
+
+Each must contain:
+
+BASIC COURSE
++
+ADVANCE COURSE
+
+No prices.
+
+==================================================
+39. FINAL VISUAL STANDARD
+==================================================
+
+Do not make this update look like a simple text replacement.
+
+The new course system should feel like a professionally designed premium course platform.
 
 Use:
 
-Website background:
-#FFFFFF
-
-Watercolor background:
-very light blue / translucent
-
-Primary website blue:
-#1D4ED8
+white
 
-Secondary blue:
-#3B82F6
+watercolor blue
 
-Soft blue:
-#60A5FA
+royal blue
 
-Light blue:
-#BFDBFE
+soft sky blue
 
-SDC gold:
-#F5B400
+small SDC gold accents
 
-Text:
-deep navy rather than pure black where appropriate
+realistic premium imagery
 
-The Tornado must feel like it belongs to this exact design system.
+smooth animations
 
---------------------------------------------------
-16. DO NOT OVERUSE GOLD
---------------------------------------------------
+excellent typography
 
-Gold is part of the SDC identity but must remain an accent.
+clean spacing
 
-Use #F5B400 only for:
+premium cards
 
-- a few particles
-- tiny comet highlights
-- selected micro-details
+beautiful course detail experience
 
-Never use gold for the main Tornado strands.
+The final result should feel like a professionally designed ₹80K-class commercial website.
 
-Never create a gold tornado.
+Do the implementation first.
 
---------------------------------------------------
-17. FINAL VISUAL RESULT
---------------------------------------------------
+Then perform a separate UI/UX refinement pass.
 
-The final hero should visually communicate:
+Then perform a functionality pass.
 
-SDC LOGO
-+
-WHITE SPACE
-+
-BLUE WATERCOLOUR
-+
-ROYAL BLUE TORNADO
-+
-REAL PREMIUM HERO IMAGE
-+
-SOFT BLUE LIGHT
-+
-SMALL GOLD ACCENTS
-+
-PREMIUM TYPOGRAPHY
+Then perform a responsive/mobile pass.
 
-The result should look:
+Do not stop when the code merely works.
 
-CLEAN
-PREMIUM
-MODERN
-TECHNOLOGICAL
-CREATIVE
-EDUCATIONAL
-PROFESSIONAL
-
-NOT:
-
-DARK
-GAMING
-CYBERPUNK
-NEON
-GENERIC AI TEMPLATE
-OR OVER-ANIMATED
-
---------------------------------------------------
-18. FINAL QUALITY CHECK
---------------------------------------------------
-
-After implementation, inspect the actual rendered website.
-
-Check:
-
-1. Does Tornado visually match the SDC website?
-2. Is the white background still dominant?
-3. Does blue watercolor blend naturally?
-4. Is the Tornado too bright?
-5. Is the Tornado stealing attention from the headline?
-6. Are gold accents subtle?
-7. Does the hero look premium?
-8. Does the animation remain smooth?
-9. Does mobile remain fast?
-10. Is there any horizontal overflow?
-11. Are there console errors?
-12. Is there only one Tornado instance?
-
-If any answer is problematic, refine the implementation before finishing.
-
-FINAL DESIGN RULE:
-
-The Tornado is NOT the main attraction.
-
-It is a premium interactive layer that makes the SDC hero section feel expensive.
-
-The hierarchy must remain:
-
-1. SDC BRAND
-2. HERO HEADLINE
-3. CTA
-4. REAL HERO VISUAL
-5. TORNADO ANIMATION
-6. WATERCOLOUR DETAILS
-7. MICRO-INTERACTIONS
-## VISUAL REFERENCE — MUST FOLLOW
-
-The supplied website mockup/image is the visual reference for the final HERO SECTION.
-
-Do NOT copy the image as a static webpage.
-
-Instead reproduce its visual language as a REAL INTERACTIVE WEBSITE.
-
-The following elements shown in the reference must become functional/animated:
-
-1. Blue watercolor background
-2. Blue Tornado/WebGL particle effect
-3. Realistic hero photography
-4. Floating information cards
-5. Premium navigation
-6. Animated CTA buttons
-7. Soft blue particles
-8. Small gold light accents
-9. Smooth scroll-reveal animations
-
-IMPORTANT TORNADO BEHAVIOUR:
-
-The Tornado shown in the reference is only a visual representation.
-
-In the actual website it must be a LIVE ANIMATED Originkit Tornado component.
-
-It must continuously animate.
-
-Particles must move through the vortex.
-
-Comets must travel through the strands.
-
-The strands must rotate/flow smoothly.
-
-Cursor movement should subtly affect the particles.
-
-The animation must NOT be a GIF or static image.
-
-COLOR:
-
-Primary: #1D4ED8
-Secondary: #3B82F6
-Soft Blue: #60A5FA
-Light Blue: #BFDBFE
-Accent Gold: #F5B400
-Background: transparent
-
-The Tornado must blend naturally into the white watercolor environment.
-
-Do NOT use black behind the Tornado.
-
-Do NOT use purple.
-
-Do NOT use a cyberpunk/neon appearance.
-
-Do NOT make the Tornado excessively bright.
-
-The Tornado should look like BLUE WATERCOLOUR ENERGY flowing around the hero image.
-
-LAYERING:
-
-White background
-↓
-Watercolor texture
-↓
-Tornado/WebGL
-↓
-Hero photograph
-↓
-Floating information cards
-↓
-Hero text and CTA where appropriate
-
-The hero text must ALWAYS remain readable.
-
-RESPONSIVE:
-
-Desktop → full Tornado
-Tablet → reduced Tornado
-Mobile → lightweight/reduced Tornado
-Low-power devices → lightweight fallback
-prefers-reduced-motion → static/light animation
-
-PERFORMANCE:
-
-Only ONE Tornado instance.
-
-Do not create multiple WebGL canvases.
-
-Do not make the animation cause scrolling lag.
-
-Do not block the page from becoming interactive.
-
-FINAL GOAL:
-
-The visitor should immediately feel:
-
-"THIS IS A PREMIUM DIGITAL ACADEMY WEBSITE."
-
-The animation should enhance that feeling rather than look like a random component pasted into the page.
+STOP ONLY when the complete course experience feels polished and production-ready.
